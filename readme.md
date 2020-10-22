@@ -6,6 +6,6 @@ De telefoon ... een prachtig stukje technologie wat ieders leven op zijn kop hee
 
 Echter achter elke telefoon kleeft een schaduwkant, hoe komt namelijk een telefoon tot stand? Welk verhaal gaat er schuil achter de mobiele telefoon?
 
-_Beleef het middels de [interactieve website][url], gebaseerd op de documentaire Blood on the Mobile van Frank Piasecki Poulsen._
+_Beleef het middels de [interactieve website][url], gebaseerd op de documentaire Blood in the Mobile van Frank Piasecki Poulsen._
 
 [url]: https://blood-in-the-mobile.netlify.app
