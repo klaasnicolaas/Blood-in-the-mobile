@@ -37,7 +37,7 @@
 .section--textbox__button{
   position: absolute;
   bottom: 5%;
-  right: 5%;
+  right: 1%;
   width: 4rem;
   height: 4rem;
   border: none;
