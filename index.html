@@ -5,10 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blood in the Mobile</title>
 
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/beginscherm.css">
     </head>
-    <body class="test">
-        <button id="beginButton" name="beginButton" onclick="location.href='introscreen.html'">START</button>
+    <body>
+        <div class="start__header">
+            <h1>Blood in the Mobile</h1>
+        </div>
+        <img class="start__image" src="./assets/img/smartphone.png" alt="">
+        <div class="start__text">
+            <p>Welk verhaal gaat er schuil aan de telefoon die je nu in je handen hebt?</p>
+            <p>Klik op de <strong>knop</strong> om daar achter te komen!</p>
+        </div>
+        <div class="btn btn--start" onclick="location.href='introscreen.html'">
+            <span>Ga op ontdekking!</span>
+        </div>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
