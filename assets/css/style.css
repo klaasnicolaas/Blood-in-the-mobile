@@ -11,3 +11,261 @@
 html {
     font-size: 62.5%;
 }
+.body{
+  display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f4faff;
+overflow: hidden;
+}
+
+.container{
+  background-image: url("../img/applestore.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+}
+
+.section--container{
+  display: flex;
+  justify-content: center;
+}
+.section--textbox{
+  margin-top: 2rem;
+  background-color: white;
+  height: 19rem;
+  width: 30rem;
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section--textbox__text, .section--textbox__question{
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+
+.section--textbox__question{
+  font-weight: bold;
+
+}
+.section--textbox__button{
+  width: 4rem;
+  height: 4rem;
+  float: right;
+  border: none;
+  background: white;
+  font-size: 3rem;
+}
+
+.section--textbox__button:hover {
+    background: #FA964D;
+    color: white;
+}
+
+.container__character{
+  grid-column: 1 / span 1;
+  grid-row: span 2;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.container__character__head{
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  background-color: #479EBA;
+  border-radius: 50%;
+  top:30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+
+}
+.container__character__body{
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  background-color: #2E2E2E;
+  border-radius: 50%;
+  top:100%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+}
+
+.earth{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #0588e4 url('../img/earth.png');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  animation: animate 12s linear infinite;
+
+}
+.earth:active{
+  transform: scale(5);
+}
+.earth:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url('../img/cloud.png');
+  background-size: cover;
+  animation: animate 18s linear infinite;
+  z-index: 1;
+}
+.earth img{
+  position: absolute;
+  z-index: 1;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.earth:active img{
+  transform: scale(0.2);
+}
+@keyframes animate {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 719px 0;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 667px) {
+  .container__character__head{
+    height: 10rem;
+    width: 10rem;
+    top:40%;
+    left: 30%;
+
+
+  }
+  .container__character__body{
+    height: 20rem;
+    width: 20rem;
+    top:100%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .section--textbox{
+      width: 34rem;
+      height: 18rem;
+  }
+  .container__character__head{
+    height: 15rem;
+    width: 14rem;
+    top:40%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 25rem;
+    width: 25rem;
+    top:100%;
+    left: 30%;
+  }
+
+}
+
+@media (min-width: 414px) {
+  .container__character__head{
+    height: 15rem;
+    width: 15rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 25rem;
+    width: 25rem;
+    top:100%;
+    left: 30%;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .section--textbox{
+    height: 24rem;
+    width: 70rem;
+  }
+  .section--textbox__text, .section--textbox__question{
+    font-size: 2.4rem;
+    margin: 1.4rem;
+  }
+  .section--textbox__button{
+    width: 6rem;
+    height: 6rem;
+    font-size: 5rem;
+  }
+  .container__character__head{
+    height: 20rem;
+    width: 20rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 35rem;
+    width: 35rem;
+    top:100%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section--textbox{
+    height: 28rem;
+    width: 90rem;
+  }
+  .section--textbox__text, .section--textbox__question{
+    font-size: 3rem;
+    margin: 1.4rem;
+  }
+  .section--textbox__button{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+    font-size: 5rem;
+  }
+  .container__character__head{
+    height: 25rem;
+    width: 25rem;
+    top:40%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 45rem;
+    width: 45rem;
+    top:100%;
+    left: 30%;
+  }
+@media (min-width: 1254px) {
+  .container__character__head{
+    height: 20rem;
+    width: 20rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 35rem;
+    width: 35rem;
+    top:110%;
+    left: 30%;
+  }
+}
+}
