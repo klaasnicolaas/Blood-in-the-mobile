@@ -36,7 +36,7 @@
 }
 
 .btn--start {
-    bottom: 15%;
+    bottom: 6%;
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -70,4 +70,19 @@
 	40% {
 		transform: scale(1.15) rotate(0);
 	}
+}
+
+@media (min-width: 375px) {
+  .btn--start {
+      bottom: 9%;
+  }
+
+}
+
+@media (min-width: 700px) {
+  .btn--start {
+      bottom: 20%;
+
+  }
+
 }

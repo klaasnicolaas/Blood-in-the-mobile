@@ -40,6 +40,7 @@
   border: none;
   background: white;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .section--textbox__button:hover {
@@ -95,6 +96,7 @@
   }
   .section--textbox{
     width: 35rem;
+    height: 19rem;
   }
 }
 
@@ -114,6 +116,10 @@
     width: 25rem;
     top:100%;
     left: 30%;
+  }
+  .section--textbox{
+    width: 35rem;
+    height: 20rem;
   }
 
 }

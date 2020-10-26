@@ -23,6 +23,7 @@ width: 100vw;
   align-items: center;
   transition: 0.5s;
   animation: animate 12s linear infinite;
+  cursor: pointer;
 
 }
 .earth:active{
