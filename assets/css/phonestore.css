@@ -1,0 +1,206 @@
+/*Styling second screen. In the Phone store*/
+
+.container{
+  background-image: url("../img/applestore.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  width: 100vw;
+}
+
+.section--container{
+  display: flex;
+  justify-content: center;
+}
+.section--textbox{
+  margin-top: 2rem;
+  background-color: white;
+  height: 21rem;
+  width: 30rem;
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.section--textbox__text, .section--textbox__question{
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+
+.section--textbox__question{
+  font-weight: bold;
+
+}
+.section--textbox__button{
+  width: 4rem;
+  height: 4rem;
+  float: right;
+  border: none;
+  background: white;
+  font-size: 3rem;
+}
+
+.section--textbox__button:hover {
+    background: var(--button-hover-orange);
+    color: white;
+}
+
+.container__character{
+  grid-column: 1 / span 1;
+  grid-row: span 2;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.container__character__head{
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  background-color: var(--character-head-color);
+  border-radius: 50%;
+  top:30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+
+}
+.container__character__body{
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  background-color: var(--character-body-color);
+  border-radius: 50%;
+  top:100%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+}
+
+/*Media queries*/
+@media (min-width: 375px) and (min-height: 667px) {
+  .container__character__head{
+    height: 10rem;
+    width: 10rem;
+    top:40%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 20rem;
+    width: 20rem;
+    top:100%;
+    left: 30%;
+  }
+  .section--textbox{
+    width: 35rem;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .section--textbox{
+      width: 34rem;
+      height: 18rem;
+  }
+  .container__character__head{
+    height: 15rem;
+    width: 14rem;
+    top:40%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 25rem;
+    width: 25rem;
+    top:100%;
+    left: 30%;
+  }
+
+}
+
+@media (min-width: 414px) {
+  .container__character__head{
+    height: 15rem;
+    width: 15rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 25rem;
+    width: 25rem;
+    top:100%;
+    left: 30%;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .section--textbox{
+    height: 26rem;
+    width: 70rem;
+  }
+  .section--textbox__text, .section--textbox__question{
+    font-size: 2.4rem;
+    margin: 1.4rem;
+  }
+  .section--textbox__button{
+    width: 6rem;
+    height: 6rem;
+    font-size: 5rem;
+  }
+  .container__character__head{
+    height: 20rem;
+    width: 20rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 35rem;
+    width: 35rem;
+    top:100%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section--textbox{
+    height: 28rem;
+    width: 90rem;
+  }
+  .section--textbox__text, .section--textbox__question{
+    font-size: 3rem;
+    margin: 1.4rem;
+  }
+  .section--textbox__button{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+    font-size: 5rem;
+  }
+  .container__character__head{
+    height: 25rem;
+    width: 25rem;
+    top:40%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 45rem;
+    width: 45rem;
+    top:100%;
+    left: 30%;
+  }
+@media (min-width: 1254px) {
+  .container__character__head{
+    height: 20rem;
+    width: 20rem;
+    top:30%;
+    left: 30%;
+  }
+  .container__character__body{
+    height: 35rem;
+    width: 35rem;
+    top:110%;
+    left: 30%;
+  }
+}
+}
