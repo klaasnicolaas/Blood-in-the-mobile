@@ -21,6 +21,7 @@
   border: 0.3rem solid black;
   border-radius: 1rem;
   padding: 1rem;
+  position: relative;
 }
 
 .section--textbox__text, .section--textbox__question{
@@ -34,9 +35,11 @@
 
 }
 .section--textbox__button{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   width: 4rem;
   height: 4rem;
-  float: right;
   border: none;
   background: white;
   font-size: 3rem;
