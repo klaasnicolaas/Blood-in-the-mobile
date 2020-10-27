@@ -1,6 +1,6 @@
 /*Styling second screen. In the Phone store*/
 
-.container{
+.container {
   background-image: url("../img/applestore.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,11 +9,12 @@
   width: 100vw;
 }
 
-.section__container{
+.section__container {
   display: flex;
   justify-content: center;
 }
-.section__textbox{
+
+.section__textbox {
   margin-top: 2rem;
   background-color: white;
   height: 21rem;
@@ -24,17 +25,16 @@
   position: relative;
 }
 
-.section__textbox--text, .section__textbox--question{
+.section__textbox--text, .section__textbox--question {
   font-size: 1.4rem;
   margin: 1rem;
 }
 
-
-.section__textbox--question{
+.section__textbox--question {
   font-weight: bold;
-
 }
-.section__textbox--button{
+
+.section__textbox--button {
   position: absolute;
   bottom: 5%;
   right: 1%;
@@ -59,7 +59,7 @@
   transition: 0.5s all;
 }
 
-.container__character__head{
+.container__character__head {
   height: 10rem;
   width: 10rem;
   position: absolute;
@@ -69,9 +69,9 @@
   left: 30%;
   transform: translate(-50%, -50%);
   transition: 0.8s;
-
 }
-.container__character__body{
+
+.container__character__body {
   height: 20rem;
   width: 20rem;
   position: absolute;
@@ -85,62 +85,60 @@
 
 /*Media queries*/
 @media (min-width: 375px) and (min-height: 667px) {
-  .container__character__head{
+  .container__character__head {
     height: 10rem;
     width: 10rem;
     top:40%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 20rem;
     width: 20rem;
     top:100%;
     left: 30%;
   }
-  .section__textbox{
+  .section__textbox {
     width: 35rem;
     height: 19rem;
   }
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
-  .section__textbox{
+  .section__textbox {
       width: 34rem;
       height: 18rem;
   }
-  .container__character__head{
+  .container__character__head {
     height: 15rem;
     width: 14rem;
     top:40%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 25rem;
     width: 25rem;
     top:100%;
     left: 30%;
   }
-  .section__textbox{
+  .section__textbox {
     width: 35rem;
     height: 20rem;
   }
-
 }
 
 @media (min-width: 414px) {
-  .container__character__head{
+  .container__character__head {
     height: 15rem;
     width: 15rem;
     top:30%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 25rem;
     width: 25rem;
     top:100%;
     left: 30%;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -148,22 +146,22 @@
     height: 26rem;
     width: 70rem;
   }
-  .section__textbox--text, .section__textbox--question{
+  .section__textbox--text, .section__textbox--question {
     font-size: 2.4rem;
     margin: 1.4rem;
   }
-  .section__textbox--button{
+  .section__textbox--button {
     width: 6rem;
     height: 6rem;
     font-size: 5rem;
   }
-  .container__character__head{
+  .container__character__head {
     height: 20rem;
     width: 20rem;
     top:30%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 35rem;
     width: 35rem;
     top:100%;
@@ -172,44 +170,44 @@
 }
 
 @media (min-width: 1024px) {
-  .section__textbox{
+  .section__textbox {
     height: 28rem;
     width: 90rem;
   }
-  .section__textbox--text, .section__textbox--question{
+  .section__textbox--text, .section__textbox--question {
     font-size: 3rem;
     margin: 1.4rem;
   }
-  .section__textbox--button{
+  .section__textbox--button {
     width: 6rem;
     height: 6rem;
     margin-right: 2rem;
     font-size: 5rem;
   }
-  .container__character__head{
+  .container__character__head {
     height: 25rem;
     width: 25rem;
     top:40%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 45rem;
     width: 45rem;
     top:100%;
     left: 30%;
   }
+}
 @media (min-width: 1254px) {
-  .container__character__head{
+  .container__character__head {
     height: 20rem;
     width: 20rem;
     top:30%;
     left: 30%;
   }
-  .container__character__body{
+  .container__character__body {
     height: 35rem;
     width: 35rem;
     top:110%;
     left: 30%;
   }
-}
 }
