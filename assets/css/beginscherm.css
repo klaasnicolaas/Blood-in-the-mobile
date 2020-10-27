@@ -1,37 +1,4 @@
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --bg-color: #222222;
-    --button-border: #FF5656;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background-color: var(--bg-color);
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 3rem;
-    color: white;
-}
-
-p {
-    font-size: 1.6rem;
-    padding: 0.5rem 0 0.5rem 0;
-}
-
+/*Styling Start screen*/
 .start__header {
     top: 10%;
     position: absolute;
@@ -69,7 +36,7 @@ p {
 }
 
 .btn--start {
-    bottom: 15%;
+    bottom: 6%;
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -103,4 +70,19 @@ p {
 	40% {
 		transform: scale(1.15) rotate(0);
 	}
+}
+
+@media (min-width: 375px) {
+  .btn--start {
+      bottom: 9%;
+  }
+
+}
+
+@media (min-width: 700px) {
+  .btn--start {
+      bottom: 20%;
+
+  }
+
 }
