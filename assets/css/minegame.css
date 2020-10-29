@@ -1,0 +1,194 @@
+.game__title{
+  text-align: center;
+  color: var(--white);
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__game__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  margin: 0 auto;
+
+}
+.grid__game__container__item {
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 0.3rem solid  var(--button-hover-orange);
+}
+
+#game{
+  width: 30rem;
+  height: 40rem;
+  border: 0.1rem solid black;
+  margin: auto;
+  background-image: url("../img/mine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#character{
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  top: 24rem;
+  left: 20rem;
+  z-index: 1;
+  background-image: url("../img/minecart.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.block{
+  width: 30rem;
+  height: 2rem;
+  background-color: var(--mine-block-brown);
+  position: relative;
+  top: 10rem;
+  margin-top: -2.2rem;
+}
+.hole{
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--white);
+  position: relative;
+  top: 10rem;
+  margin-top: -2rem;
+}
+
+.grid__game__container__item:hover{
+  background-color: var(--button-hover-orange);
+  color: var(--white);
+  border: 0.3rem solid  var(--white);
+}
+
+.shadow{
+  z-index:2;
+  position: absolute;
+  top:0rem;
+  left:0rem;
+  width:100%;
+  height:100vh;
+  background: rgba(0,0,0,0.6);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-modal{
+  width:35rem;
+  height:32rem;
+  background: var(--white);
+  border-radius:5%;
+  text-align: center;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.main-modal > h2{
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.main-modal > p{
+  font-size: 1.6rem;
+  margin: 3rem;
+}
+
+.btn-danger{
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+  width: 16rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--bg-color);
+  color: var(--white);
+  border: 0.4rem solid  var(--button-hover-orange);
+}
+
+.btn-danger:hover{
+  background-color: var(--button-hover-orange);
+  color: var(--white);
+  border: 0.3rem solid  var(--white);
+}
+
+.hideModal{
+  z-index:-1;
+  opacity:0;
+  animation: hide .25s;
+  transform: scale(0);
+
+}
+
+@keyframes hide {
+  from{
+    z-index:2;
+    transform: scale(1);
+    opacity:1;
+  } to{
+      z-index:-1;
+      transform: scale(0);
+      opacity: 0;
+  }
+}
+.showModal{
+  opacity:1;
+  z-index:2;
+  animation: show .2s;
+  transform: scale(1);
+}
+
+@keyframes show {
+  from{
+    transform: scale(0);
+    opacity:0;
+    z-index:-1;
+  } to{
+    transform: scale(1);
+    opacity: 1;
+    z-index:2;
+  }
+}
+
+@media (min-width: 76.8rem) {
+  .grid__game__container {
+    width: 50rem;
+  }
+  .grid__game__container__item {
+    width: 18rem;
+    height: 6rem;
+    margin: 4rem;
+  }
+  #game{
+    width: 50rem;
+    height: 50rem;
+  }
+
+  #character{
+    top: 42rem;
+    left: 20rem;
+  }
+
+  .game__title{
+    font-size: 2.9rem;
+  }
+  .block{
+    width: 50rem;
+  }
+}

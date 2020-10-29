@@ -12,6 +12,8 @@
     --character-body-color: #2E2E2E;
     --bg-color-sky: #f4faff;
     --blue-earth-color: #0588e4;
+    --mine-block-brown: #c29467;
+    --white: #ffffff;
 }
 
 html {
@@ -21,12 +23,14 @@ html {
 body {
     background-color: var(--bg-color);
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
+.body__flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
     font-size: 3rem;
     color: white;
