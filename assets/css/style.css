@@ -48,3 +48,16 @@ p {
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+.section__container {
+    display: flex;
+    justify-content: center;
+}
+
+.section__textbox {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    transition: 0.8s;
+}

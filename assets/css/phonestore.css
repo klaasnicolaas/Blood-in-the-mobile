@@ -1,4 +1,7 @@
 /*Styling second screen. In the Phone store*/
+body {
+  overflow-y: hidden;
+}
 
 .container {
   background-image: url("../img/applestore.jpg");
@@ -9,23 +12,14 @@
   width: 100vw;
 }
 
-.section__container {
-  display: flex;
-  justify-content: center;
-}
-
 .section__textbox {
-  margin-top: 2rem;
   background-color: white;
-  height: 21rem;
-  width: 30rem;
   border: 0.3rem solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  position: relative;
+  height: 21rem;
+  width: 35rem;
 }
 
-.section__textbox--text, .section__textbox--question {
+.section__textbox > p {
   font-size: 1.4rem;
   margin: 1rem;
 }
@@ -37,8 +31,8 @@
 /* Buttons */
 .button--next {
   bottom: 5%;
-  right: 1%;
-  width: 4rem;
+  right: 3%;
+  width: 11rem;
   height: 4rem;
   background: white;
   font-size: 3rem;
@@ -50,162 +44,112 @@
 }
 
 .container__character{
-  grid-column: 1 / span 1;
-  grid-row: span 2;
-  position: relative;
-  overflow: hidden;
   transition: 0.5s all;
 }
 
 .container__character--head {
-  height: 10rem;
-  width: 10rem;
+  height: 12rem;
+  width: 12rem;
   position: absolute;
   background-color: var(--character-head-color);
   border-radius: 50%;
-  top:30%;
-  left: 30%;
+  bottom: 12%;
+  left: 35%;
   transform: translate(-50%, -50%);
   transition: 0.8s;
 }
 
 .container__character--body {
-  height: 20rem;
+  height: 25rem;
   width: 20rem;
   position: absolute;
   background-color: var(--character-body-color);
   border-radius: 50%;
-  top:100%;
-  left: 30%;
+  top: 100%;
+  left: 35%;
   transform: translate(-50%, -50%);
   transition: 0.8s;
 }
 
-/*Media queries*/
-@media (min-width: 375px) and (min-height: 667px) {
-  .container__character--head {
-    height: 10rem;
-    width: 10rem;
-    top:40%;
-    left: 30%;
-  }
-  .container__character--body {
-    height: 20rem;
-    width: 20rem;
-    top:100%;
-    left: 30%;
-  }
-  .section__textbox {
-    width: 35rem;
-    height: 19rem;
-  }
-}
-
-@media (min-width: 375px) and (min-height: 812px) {
-  .section__textbox {
-      width: 34rem;
-      height: 18rem;
-  }
-  .container__character--head {
-    height: 15rem;
-    width: 14rem;
-    top:40%;
-    left: 30%;
-  }
-  .container__character--body {
-    height: 25rem;
-    width: 25rem;
-    top:100%;
-    left: 30%;
-  }
-  .section__textbox {
-    width: 35rem;
-    height: 20rem;
-  }
-}
-
-@media (min-width: 414px) {
-  .container__character--head {
-    height: 15rem;
-    width: 15rem;
-    top:30%;
-    left: 30%;
-  }
-  .container__character--body {
-    height: 25rem;
-    width: 25rem;
-    top:100%;
-    left: 30%;
-  }
-}
-
+/* Tablet view */
 @media (min-width: 768px) {
   .section__textbox{
-    height: 26rem;
+    height: 20rem;
     width: 70rem;
   }
-  .section__textbox--text, .section__textbox--question {
-    font-size: 2.4rem;
+  .section__textbox > p {
+    font-size: 2rem;
     margin: 1.4rem;
   }
+
+  /* Next button */
   .button--next {
-    width: 6rem;
     height: 6rem;
+    width: 16rem;
     font-size: 5rem;
   }
+
+  .button--next > p {
+    font-size: 2rem;
+  }
+
+  .fas {
+    font-size: 3rem;
+  }
+
+  /* Persoon */
   .container__character--head {
     height: 20rem;
     width: 20rem;
-    top:30%;
+    bottom: 16%;
     left: 30%;
   }
   .container__character--body {
-    height: 35rem;
+    height: 40rem;
     width: 35rem;
     top:100%;
     left: 30%;
   }
 }
 
+/* Klein PC scherm */
 @media (min-width: 1024px) {
   .section__textbox {
-    height: 28rem;
+    height: 23rem;
     width: 90rem;
   }
-  .section__textbox--text, .section__textbox--question {
-    font-size: 3rem;
-    margin: 1.4rem;
+
+  .section__textbox > p {
+    font-size: 2.5rem;
   }
+
+  /* Button next */
   .button--next {
-    width: 6rem;
     height: 6rem;
-    margin-right: 2rem;
-    font-size: 5rem;
+    width: 18rem;
   }
-  .container__character--head {
-    height: 25rem;
-    width: 25rem;
-    top:40%;
-    left: 30%;
+
+  .button--next > p {
+    font-size: 2.5rem;
   }
-  .container__character--body {
-    height: 45rem;
-    width: 45rem;
-    top:100%;
-    left: 30%;
+
+  .fas {
+    font-size: 3rem;
   }
 }
+
+/* Groot PC scherm */
 @media (min-width: 1254px) {
   .container__character--head {
     height: 20rem;
     width: 20rem;
-    top:30%;
+    bottom: 19%;
     left: 30%;
   }
   .container__character--body {
-    height: 35rem;
-    width: 35rem;
-    top:110%;
+    height: 45rem;
+    width: 40rem;
+    top:100%;
     left: 30%;
   }
 }
