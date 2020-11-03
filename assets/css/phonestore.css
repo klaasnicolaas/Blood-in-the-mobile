@@ -34,19 +34,17 @@
   font-weight: bold;
 }
 
-.section__textbox--button {
-  position: absolute;
+/* Buttons */
+.button--next {
   bottom: 5%;
   right: 1%;
   width: 4rem;
   height: 4rem;
-  border: none;
   background: white;
   font-size: 3rem;
-  cursor: pointer;
 }
 
-.section__textbox--button:hover {
+.button--next:hover {
     background: var(--button-hover-orange);
     color: white;
 }
@@ -150,7 +148,7 @@
     font-size: 2.4rem;
     margin: 1.4rem;
   }
-  .section__textbox--button {
+  .button--next {
     width: 6rem;
     height: 6rem;
     font-size: 5rem;
@@ -178,7 +176,7 @@
     font-size: 3rem;
     margin: 1.4rem;
   }
-  .section__textbox--button {
+  .button--next {
     width: 6rem;
     height: 6rem;
     margin-right: 2rem;
