@@ -1,14 +1,9 @@
 /*Styling second screen. In the Phone store*/
-<<<<<<< HEAD
-
-.container{
-=======
 body {
   overflow-y: hidden;
 }
 
 .container {
->>>>>>> master
   background-image: url("../img/applestore.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,24 +12,6 @@ body {
   width: 100vw;
 }
 
-<<<<<<< HEAD
-.section__container{
-  display: flex;
-  justify-content: center;
-}
-.section__textbox{
-  margin-top: 2rem;
-  background-color: white;
-  height: 21rem;
-  width: 30rem;
-  border: 0.3rem solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  position: relative;
-}
-
-.section__textbox--text, .section__textbox--question{
-=======
 .section__textbox {
   background-color: white;
   border: 0.3rem solid black;
@@ -43,32 +20,10 @@ body {
 }
 
 .section__textbox > p {
->>>>>>> master
   font-size: 1.4rem;
   margin: 1rem;
 }
 
-<<<<<<< HEAD
-
-.section__textbox--question{
-  font-weight: bold;
-
-}
-.section__textbox--button{
-  position: absolute;
-  bottom: 5%;
-  right: 1%;
-  width: 4rem;
-  height: 4rem;
-  border: none;
-  background: white;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.section__textbox--button:hover {
-    background: var(--button-hover-orange);
-=======
 .section__textbox--question {
   font-weight: bold;
 }
@@ -85,34 +40,10 @@ body {
 
 .button--next:hover {
     background-color: var(--button-hover-orange);
->>>>>>> master
     color: white;
 }
 
 .container__character{
-<<<<<<< HEAD
-  grid-column: 1 / span 1;
-  grid-row: span 2;
-  position: relative;
-  overflow: hidden;
-  transition: 0.5s all;
-}
-
-.container__character__head{
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  background-color: var(--character-head-color);
-  border-radius: 50%;
-  top:30%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  transition: 0.8s;
-
-}
-.container__character__body{
-  height: 20rem;
-=======
   transition: 0.5s all;
 }
 
@@ -130,106 +61,16 @@ body {
 
 .container__character--body {
   height: 25rem;
->>>>>>> master
   width: 20rem;
   position: absolute;
   background-color: var(--character-body-color);
   border-radius: 50%;
-<<<<<<< HEAD
-  top:100%;
-  left: 30%;
-=======
   top: 100%;
   left: 35%;
->>>>>>> master
   transform: translate(-50%, -50%);
   transition: 0.8s;
 }
 
-<<<<<<< HEAD
-/*Media queries*/
-@media (min-width: 375px) and (min-height: 667px) {
-  .container__character__head{
-    height: 10rem;
-    width: 10rem;
-    top:40%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 20rem;
-    width: 20rem;
-    top:100%;
-    left: 30%;
-  }
-  .section__textbox{
-    width: 35rem;
-    height: 19rem;
-  }
-}
-
-@media (min-width: 375px) and (min-height: 812px) {
-  .section__textbox{
-      width: 34rem;
-      height: 18rem;
-  }
-  .container__character__head{
-    height: 15rem;
-    width: 14rem;
-    top:40%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 25rem;
-    width: 25rem;
-    top:100%;
-    left: 30%;
-  }
-  .section__textbox{
-    width: 35rem;
-    height: 20rem;
-  }
-
-}
-
-@media (min-width: 414px) {
-  .container__character__head{
-    height: 15rem;
-    width: 15rem;
-    top:30%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 25rem;
-    width: 25rem;
-    top:100%;
-    left: 30%;
-  }
-
-}
-
-@media (min-width: 768px) {
-  .section__textbox{
-    height: 26rem;
-    width: 70rem;
-  }
-  .section__textbox--text, .section__textbox--question{
-    font-size: 2.4rem;
-    margin: 1.4rem;
-  }
-  .section__textbox--button{
-    width: 6rem;
-    height: 6rem;
-    font-size: 5rem;
-  }
-  .container__character__head{
-    height: 20rem;
-    width: 20rem;
-    top:30%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 35rem;
-=======
 /* Tablet view */
 @media (min-width: 768px) {
   .section__textbox{
@@ -265,57 +106,12 @@ body {
   }
   .container__character--body {
     height: 40rem;
->>>>>>> master
     width: 35rem;
     top:100%;
     left: 30%;
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 1024px) {
-  .section__textbox{
-    height: 28rem;
-    width: 90rem;
-  }
-  .section__textbox--text, .section__textbox--question{
-    font-size: 3rem;
-    margin: 1.4rem;
-  }
-  .section__textbox--button{
-    width: 6rem;
-    height: 6rem;
-    margin-right: 2rem;
-    font-size: 5rem;
-  }
-  .container__character__head{
-    height: 25rem;
-    width: 25rem;
-    top:40%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 45rem;
-    width: 45rem;
-    top:100%;
-    left: 30%;
-  }
-@media (min-width: 1254px) {
-  .container__character__head{
-    height: 20rem;
-    width: 20rem;
-    top:30%;
-    left: 30%;
-  }
-  .container__character__body{
-    height: 35rem;
-    width: 35rem;
-    top:110%;
-    left: 30%;
-  }
-}
-}
-=======
 /* Klein PC scherm */
 @media (min-width: 1024px) {
   .section__textbox {
@@ -357,4 +153,3 @@ body {
     left: 30%;
   }
 }
->>>>>>> master

@@ -1,18 +1,5 @@
 /*Styling for the airplane screen*/
 
-<<<<<<< HEAD
-.body{
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-background-color: var(--bg-color-sky);
-overflow: hidden;
-width: 100vw;
-}
-
-.earth{
-=======
 .body {
   display: flex;
   justify-content: center;
@@ -24,7 +11,6 @@ width: 100vw;
 }
 
 .earth {
->>>>>>> master
   position: relative;
   width: 400px;
   height: 400px;
@@ -38,14 +24,6 @@ width: 100vw;
   transition: 0.5s;
   animation: animate 12s linear infinite;
   cursor: pointer;
-<<<<<<< HEAD
-
-}
-.earth:active{
-  transform: scale(5);
-}
-.earth:before{
-=======
 }
 
 .earth:active {
@@ -53,7 +31,6 @@ width: 100vw;
 }
 
 .earth:before {
->>>>>>> master
   content: '';
   position: absolute;
   width: 100%;
@@ -64,28 +41,18 @@ width: 100vw;
   animation: animate 18s linear infinite;
   z-index: 1;
 }
-<<<<<<< HEAD
-.earth img{
-=======
 
 .earth img {
->>>>>>> master
   position: absolute;
   z-index: 1;
   transition: 0.5s;
   pointer-events: none;
 }
 
-<<<<<<< HEAD
-.earth:active img{
-  transform: scale(0.2);
-}
-=======
 .earth:active img {
   transform: scale(0.2);
 }
 
->>>>>>> master
 @keyframes animate {
   0%{
     background-position: 0 0;
