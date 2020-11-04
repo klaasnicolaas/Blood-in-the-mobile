@@ -17,7 +17,7 @@
 .section__textbox {
   margin-top: 2rem;
   background-color: white;
-  height: 21rem;
+  height: 16rem;
   width: 30rem;
   border: 0.3rem solid black;
   border-radius: 1rem;
@@ -25,6 +25,10 @@
   position: relative;
 }
 
+.section__textbox--text::after{
+  content: "";
+  position: absolute;
+}
 .section__textbox--text, .section__textbox--question {
   font-size: 1.4rem;
   margin: 1rem;
@@ -97,10 +101,6 @@
     top:100%;
     left: 30%;
   }
-  .section__textbox {
-    width: 35rem;
-    height: 19rem;
-  }
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
@@ -119,10 +119,6 @@
     width: 25rem;
     top:100%;
     left: 30%;
-  }
-  .section__textbox {
-    width: 35rem;
-    height: 20rem;
   }
 }
 
@@ -143,7 +139,7 @@
 
 @media (min-width: 768px) {
   .section__textbox{
-    height: 26rem;
+    height: 20rem;
     width: 70rem;
   }
   .section__textbox--text, .section__textbox--question {
@@ -171,7 +167,7 @@
 
 @media (min-width: 1024px) {
   .section__textbox {
-    height: 28rem;
+    height: 23rem;
     width: 90rem;
   }
   .section__textbox--text, .section__textbox--question {
