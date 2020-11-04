@@ -5,7 +5,8 @@
 }
 
 :root {
-    --bg-color: #222222;
+    --bg-color-dark: #222222;
+    --bg-color-light: #333333;
     --button-border: #FF5656;
     --button-hover-orange: #FA964D;
     --character-head-color: #479EBA;
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-dark);
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -32,7 +33,32 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
 p {
     font-size: 1.8rem;
     padding: 0.5rem 0 0.5rem 0;
+}
+
+.button {
+    position: absolute;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.section__container {
+    display: flex;
+    justify-content: center;
+}
+
+.section__textbox {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    transition: 0.8s;
 }
