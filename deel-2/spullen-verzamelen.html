@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deel 2 - Spullen verzamelen / Blood in the Mobile</title>
+
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/spullen-verzamelen.css">
+    </head>
+    <body>
+        <div class="scroll">
+            <div id="js--background" class="background">
+                <picture id="js--water_bottle" class="item water-bottle" onclick="show_info_box('bottle')">
+                    <img src="../assets/img/icons/water-bottle.svg" alt="waterflesje" srcset="">
+                    <div id="item_box--water_bottle" class="item_box">
+                        <p>In een warm lang als Congo is het heel belangrijk om goed te blijven drinken.</p>
+                        <button type="button" class="button button--add-to-backpack" onclick="add_to_backpack('bottle')">
+                            <p>In rugzak</p>
+                        </button>
+                    </div>
+                </picture>
+                <picture id="js--lantern" class="item lantern" onclick="show_info_box('lantern')">
+                    <img src="../assets/img/icons/lantern.svg" alt="zaklamp" srcset="">
+                    <div id="item_box--lantern" class="item_box">
+                        <p>In de mijn is het behoorlijk donker, een onmisbaar item dus.</p>
+                        <button type="button" class="button button--add-to-backpack" onclick="add_to_backpack('lantern')">
+                            <p>In rugzak</p>
+                        </button>
+                    </div>
+                </picture>
+                <picture id="js--map" class="item map" onclick="show_info_box('map')">
+                    <img src="../assets/img/icons/map.svg" alt="een landkaart" srcset="">
+                    <div id="item_box--map" class="item_box">
+                        <p>GPS ontvangst is in Congo niet zoals we gewend zijn, een kaart bied dan zeker uitkomst</p>
+                        <button type="button" class="button button--add-to-backpack" onclick="add_to_backpack('map')">
+                            <p>In rugzak</p>
+                        </button>
+                    </div>
+                </picture>
+                <picture id="js--money" class="item money" onclick="show_info_box('money')">
+                    <img src="../assets/img/icons/money.svg" alt="geld" srcset="">
+                    <div id="item_box--money" class="item_box">
+                        <p>Op de wegen in Congo vind je veel "roadblocks" of "checkpoints", van gewapende rebellen groepen. Alleen wanneer je hun geld betaald laten ze je door.</p>
+                        <button type="button" class="button button--add-to-backpack" onclick="add_to_backpack('money')">
+                            <p>In rugzak</p>
+                        </button>
+                    </div>
+                </picture>
+                <picture id="js--pocket_knife" class="item pocket-knife" onclick="show_info_box('knife')">
+                    <img src="../assets/img/icons/pocket-knife.svg" alt="zwitsers zakmes" srcset="">
+                    <div id="item_box--pocket_knife" class="item_box">
+                        <p>Het kan gebeuren dan je tijdens de reis ergens vast komt te zitten met een voertuig, dan komt een zakmes altijd van pas.</p>
+                        <button type="button" class="button button--add-to-backpack" onclick="add_to_backpack('knife')">
+                            <p>In rugzak</p>
+                        </button>
+                    </div>
+                </picture>
+            </div>
+        </div>
+
+        <!-- Backpack -->
+        <picture>
+            <img id="js--backpack" class="backpack__image" src="../assets/img/icons/backpack.svg" alt="" srcset="">
+            <div id="backpack__count">
+                <p id="backpack__count_number"></p>
+            </div>
+        </picture>
+
+        <!-- Info box with instructions -->
+        <section class="section__container">
+            <section id="js--textbox_info" class="section__textbox">
+                <h2>Je bent aangekomen in Congo!</h2>
+                <p>Om de reis naar de mijn zo goed mogelijk te laten verlopen, is het handig om nog wat spullen in te slaan. Je weet maar nooit wat je nodig hebt...</p>
+            </section>
+        </section>
+
+        <!-- Complete message -->
+        <section id="section__adventure-guy">
+            <div class="section__adventure-guy__container">
+                <h1>Klaar om op pad te gaan!</h1>
+                <p>Alles wat ingeslagen moest worden is gedaan, tijd om richting de mijn te gaan.</p>
+                <button type="button" class="button button--next">
+                    <p>Ga verder</p>
+                </button>
+            </div>
+            <picture>
+                <img class="section__adventure-guy__image" src="../assets/img/adventure.svg" alt="Persoon die op avontuur is">
+            </picture>
+        </section>
+
+
+        <!-- JS Scripts import -->
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/verzamelen.js"></script>
+    </body>
+</html>
