@@ -68,17 +68,26 @@
 
 
 .water{
-  width: 80px;
-  height: 150px;
+  width: 100px;
+  height: 120px;
 
 }
 .lamp{
-  width: 150px;
+  width: 100px;
   height: 120px;
 }
 .money{
-  width: 150px;
+  width: 100px;
   height: 80px;
+}
+.map{
+  width: 100px;
+  height: 80px;
+}
+.knife{
+  width: 100px;
+  height: 100px;
+
 }
 
 .backpack-body {

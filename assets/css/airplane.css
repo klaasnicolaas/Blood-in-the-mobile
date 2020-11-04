@@ -14,7 +14,7 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background: var(--blue-earth-color) url('../img/earth.png');
+  background: var(--blue-earth-color) url('../img/earth.webp');
   background-size: cover;
   border-radius: 50%;
   box-shadow: inset 0 0 50px rgba(0,0,0,0.85);
@@ -36,7 +36,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: url('../img/cloud.png');
+  background: url('../img/cloud.webp');
   background-size: cover;
   animation: animate 18s linear infinite;
   z-index: 1;
