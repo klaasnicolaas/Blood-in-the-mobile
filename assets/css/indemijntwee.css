@@ -1,15 +1,15 @@
-.mine__container{
-  background-image: url("../img/mine-1920.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  height: 100vh;
-  display: grid;
-  width: 100vw;
-  animation: fadein 2s;
--moz-animation: fadein 2s; /* Firefox */
--webkit-animation: fadein 2s; /* Safari and Chrome */
--o-animation: fadein 2s; /* Opera */
+.mine__container {
+    background-image: url("../img/mine-1920.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    display: grid;
+    width: 100vw;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
 }
 
 @keyframes fadein {
@@ -20,6 +20,7 @@
         opacity:1;
     }
 }
+
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
@@ -46,223 +47,218 @@
 }
 
 .mine__container__section {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-.mine__container__section__textbox--second
- {
-  display: none;
+.mine__container__section__textbox--second {
+    display: none;
 }
 
-.mine__container__section__textbox{
-  margin-top: 2rem;
-  background-color: white;
-  height: 16rem;
-  width: 30rem;
-  border: 0.3rem solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  position: relative;
+.mine__container__section__textbox {
+    margin-top: 2rem;
+    background-color: white;
+    height: 16rem;
+    width: 30rem;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
 }
 
 .mine__container__section__textbox--text,
-.mine__container__section__textbox--text--second{
-  font-size: 1.4rem;
-  margin: 1rem;
+.mine__container__section__textbox--text--second {
+    font-size: 1.4rem;
+    margin: 1rem;
 }
 
-.mine__container__section__textbox--button{
-  position: absolute;
-  bottom: 5%;
-  right: 1%;
-  width: 4rem;
-  height: 4rem;
-  border: none;
-  background: white;
-  font-size: 3rem;
-  cursor: pointer;
+.mine__container__section__textbox--button {
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: white;
+    font-size: 3rem;
+    cursor: pointer;
 }
 
-.mine__container__section__textbox--button:hover{
+.mine__container__section__textbox--button:hover {
     background: var(--button-hover-orange);
     color: white;
 }
 
-.square{
-  width: 15rem;
-  height: 15rem;
-  background-color: transparent;
+.square {
+    width: 15rem;
+    height: 15rem;
+    background-color: transparent;
     /* border: 0.3rem solid white; */
-  position: absolute;
-  right: 7%;
-  bottom: 20%;
-  cursor: pointer;
+    position: absolute;
+    right: 7%;
+    bottom: 20%;
+    cursor: pointer;
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 50px; /* Location of the box */
-  left: 0;
-  right: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: black; /* Fallback color */
-  opacity: 1;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    right: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    opacity: 1;
 }
 
 /* Modal Content */
 .modal-content {
-  left: 0;
-  right: 0;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 2rem;
-  margin-top: 2rem;
-  width: 80%;
-  height: 80%;
-  color: white;
-  background-color: black;
-  font-size: 2rem;
-  line-height: 2.5rem;
+    left: 0;
+    right: 0;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    width: 80%;
+    height: 80%;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
-.modal-button{
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem 0;
-  width: 16rem;
-  height: 5rem;
-  font-size: 1.8rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  background-color: #222222;
-  color: white;
-  border: 0.4rem solid  #FA964D;
+.modal-button {
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    width: 16rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #222222;
+    color: white;
+    border: 0.4rem solid  #FA964D;
 }
 
-.modal-button:hover{
-  background-color: #FA964D;
-  color: white;
-  border: 0.3rem solid  white;
+.modal-button:hover {
+    background-color: #FA964D;
+    color: white;
+    border: 0.3rem solid  white;
 }
 
-@keyframes blink{
-0%{opacity: 0;}
-50%{opacity: .2;}
-100%{opacity: 0.4;}
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: .2;}
+    100%{opacity: 0.4;}
 }
 
 @media (min-width: 375px) and (min-height: 667px) {
-  .square{
-    width: 18rem;
-    height: 15rem;
-    right: 7%;
-    bottom: 21%;
-  }
-  .modal-content {
-    height: 60%;
-  }
+    .square {
+        width: 18rem;
+        height: 15rem;
+        right: 7%;
+        bottom: 21%;
+    }
 
-
+    .modal-content {
+        height: 60%;
+    }
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
-  .square{
-    width: 21rem;
-    height: 18rem;
-    right: 9%;
-    bottom: 21%;
-  }
-  .modal-content {
-    height: 50%;
-  }
+    .square {
+        width: 21rem;
+        height: 18rem;
+        right: 9%;
+        bottom: 21%;
+    }
 
+    .modal-content {
+        height: 50%;
+    }
 }
 
 @media (min-width: 414px) {
-  .square{
-    width: 20rem;
-    height: 17rem;
-    right: 7%;
-    bottom: 21%;
-  }
-  .modal-content {
-    height: 50%;
+    .square{
+        width: 20rem;
+        height: 17rem;
+        right: 7%;
+        bottom: 21%;
+    }
 
-  }
-
+    .modal-content {
+        height: 50%;
+    }
 }
 
 @media (min-width:600px) {
-  .mine__container__section__textbox
-   {
-    height: 18rem;
-    width: 50rem;
-  }
+    .mine__container__section__textbox {
+        height: 18rem;
+        width: 50rem;
+    }
 
-  .mine__container__section__textbox--text,
-  .mine__container__section__textbox--text--second,
-  .mine__container__section__textbox--text--third,
-  .mine__container__section__textbox--text--fourth {
-    font-size: 2.4rem;
-  }
+    .mine__container__section__textbox--text,
+    .mine__container__section__textbox--text--second,
+    .mine__container__section__textbox--text--third,
+    .mine__container__section__textbox--text--fourth {
+        font-size: 2.4rem;
+    }
 }
 
 @media (min-width: 768px) {
-  .square{
-    width: 27rem;
-    height: 24rem;
-    right: 6%;
-    bottom: 21%;
-  }
-  .modal-content {
-    height: 50%;
-    font-size: 3rem;
-    line-height: 5rem;
-  }
-  .modal-button{
+    .square {
+        width: 27rem;
+        height: 24rem;
+        right: 6%;
+        bottom: 21%;
+    }
 
-    width: 21rem;
-    height: 8rem;
-    font-size: 2.4rem;
+    .modal-content {
+        height: 50%;
+        font-size: 3rem;
+        line-height: 5rem;
+    }
 
-  }
-
+    .modal-button {
+        width: 21rem;
+        height: 8rem;
+        font-size: 2.4rem;
+    }
 }
 
 @media (min-width: 1024px) {
-  .square{
-    width: 35rem;
-    height: 30rem;
-    right: 6%;
-    bottom: 21%;
-  }
-  .modal-content {
-    max-width: 60%;
-    height: 40%;
-  }
+    .square {
+        width: 35rem;
+        height: 30rem;
+        right: 6%;
+        bottom: 21%;
+    }
 
+    .modal-content {
+        max-width: 60%;
+        height: 40%;
+    }
 }
 
 @media (min-width: 1224px) {
-  .square{
-    width: 40rem;
-    height: 35rem;
-    right: 4%;
-    bottom: 6%;
-  }
-  .modal-content {
-    max-width: 60%;
-    height: 35%;
-    font-size: 3rem;
-    line-height: 5rem;
-  }
+    .square {
+        width: 40rem;
+        height: 35rem;
+        right: 4%;
+        bottom: 6%;
+    }
 
+    .modal-content {
+        max-width: 60%;
+        height: 35%;
+        font-size: 3rem;
+        line-height: 5rem;
+    }
 }
