@@ -34,12 +34,12 @@ body {
   right: 3%;
   width: 11rem;
   height: 4rem;
-  background: white;
+  background-color: white;
   font-size: 3rem;
 }
 
 .button--next:hover {
-    background: var(--button-hover-orange);
+    background-color: var(--button-hover-orange);
     color: white;
 }
 

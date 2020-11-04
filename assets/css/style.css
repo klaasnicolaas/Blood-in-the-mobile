@@ -5,7 +5,8 @@
 }
 
 :root {
-    --bg-color: #222222;
+    --bg-color-dark: #222222;
+    --bg-color-light: #333333;
     --button-border: #FF5656;
     --button-hover-orange: #FA964D;
     --character-head-color: #479EBA;
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-dark);
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
