@@ -1,5 +1,9 @@
 .betalen__container{
+<<<<<<< HEAD
   height: 100rem;
+=======
+  height: 100vh;
+>>>>>>> master
 }
 .betalen{
   color: var(--white);
@@ -13,7 +17,13 @@
   padding: 0;
   margin: 0 auto;
   margin-top: 2rem;
+<<<<<<< HEAD
   display: inline-block;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> master
 }
 
 .betalen__bedrag{
@@ -25,14 +35,24 @@
   color: var(--white);
   width: 20rem;
   height: 5rem;
+<<<<<<< HEAD
   display: inline-block;
   background-color: var(--betalen-bg-color);
   border: none;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--betalen-bg-color);
+  border: none;
+
+>>>>>>> master
 }
 
 .betalen__bedrag__box > p{
   font-size: 2.3rem;
 }
+<<<<<<< HEAD
 .betalen__container__bedrag__box{
   display: inline-block;
   width: 25rem;
@@ -40,6 +60,12 @@
   margin-top: 2rem;
 }
 .betalen__container__accepted{
+=======
+.betalen__container__bedrag__box, .betalen__container__accepted{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> master
   width: 25rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -60,7 +86,13 @@
   display: none;
 }
 .loader__image{
+<<<<<<< HEAD
   display: inline-block;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> master
 }
 
 .loader__coin{
@@ -76,6 +108,7 @@
   color: var(--accepted);
   height: 5rem;
   width: 25rem;
+<<<<<<< HEAD
   display: inline-block;
   border-radius: 0.4rem;
 }
@@ -109,6 +142,14 @@
   }
 }
 
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+
+}
+>>>>>>> master
 
 .betalen__bedrag__accepted > p {
   text-transform: uppercase;
