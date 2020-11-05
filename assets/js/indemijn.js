@@ -61,9 +61,9 @@ backpackBtn.onclick = function() {
 backpackClose.onclick = function() {
   backpackContent.style.animationName = "animateback";
 
-     setTimeout(()=>{
-       backpack.style.display = 'none';
-     },300);
+  setTimeout(()=>{
+    backpack.style.display = 'none';
+  },300);
 
 };
 
@@ -71,9 +71,9 @@ backpackClose.onclick = function() {
 window.onclick = function(event) {
   if (event.target == backpack) {
     backpackContent.style.animationName = "animateback";
-       setTimeout(()=>{
-         backpack.style.display = 'none';
-       },300);
+      setTimeout(()=>{
+        backpack.style.display = 'none';
+      },300);
   }
 };
 

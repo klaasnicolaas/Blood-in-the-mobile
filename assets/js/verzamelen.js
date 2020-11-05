@@ -5,7 +5,7 @@ var item_counter = 0;
 window.onload=function(){
     street_audio.volume = 0.5;
     street_audio.play();
-}
+};
 
 function add_to_backpack(id) {
     // Determine which icon + info box should be hided

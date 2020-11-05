@@ -30,7 +30,6 @@ function findScrollDirectionOtherBrowsers(event){
 }
 
 var windowHeight = window.innerHeight;
-var windowWidth = window.innerWidth;
 var autoPech = false;
 
 // update position of square 1 and square 2 when scroll event fires.
