@@ -10,29 +10,29 @@ var backpackClose = document.getElementsByClassName("backpack__button--close")[0
 
 // When the user clicks the button, open the modal
 backpackBtn.onclick = function() {
-  backpackContent.style.animationName = "animateleft";
-  backpack.style.display = "block";
-}
+	backpackContent.style.animationName = "animateleft";
+	backpack.style.display = "block";
+};
 
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
-  backpackContent.style.animationName = "animateback";
+	backpackContent.style.animationName = "animateback";
 
-     setTimeout(()=>{
-       backpack.style.display = 'none';
-     },300)
+	setTimeout(() => {
+		backpack.style.display = 'none';
+	}, 300);
 
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == backpack) {
-    backpackContent.style.animationName = "animateback";
-       setTimeout(()=>{
-         backpack.style.display = 'none';
-       },300)
-  }
-}
+	if (event.target == backpack) {
+		backpackContent.style.animationName = "animateback";
+		setTimeout(() => {
+			backpack.style.display = 'none';
+		}, 300);
+	}
+};
 
 // Get the modal van in de mijn 2
 var modal = document.getElementById("myModal");
@@ -42,13 +42,13 @@ var btn = document.getElementById("myBtn");
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
-}
+	modal.style.display = "block";
+};
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+};

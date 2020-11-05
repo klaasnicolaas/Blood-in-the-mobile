@@ -12,7 +12,7 @@ var backpackClose = document.getElementsByClassName("backpack__button--close")[0
 backpackBtn.onclick = function() {
   backpackContent.style.animationName = "animateleft";
   backpack.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
@@ -20,9 +20,9 @@ backpackClose.onclick = function() {
 
      setTimeout(()=>{
        backpack.style.display = 'none';
-     },300)
+     },300);
 
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -30,9 +30,9 @@ window.onclick = function(event) {
     backpackContent.style.animationName = "animateback";
        setTimeout(()=>{
          backpack.style.display = 'none';
-       },300)
+       },300);
   }
-}
+};
 
 
 var loader = document.getElementById("js--loader");
@@ -46,11 +46,11 @@ function moneyClicked(){
   setTimeout(()=>{
     loader.style.display = 'none';
     toegang.style.display = "block";
-  },3000)
+  },3000);
 
   setTimeout(()=>{
     location.href="test.html";
-  },5000)
+  },5000);
 
 
 

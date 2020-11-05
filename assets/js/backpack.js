@@ -12,15 +12,15 @@ var backpackClose = document.getElementsByClassName("backpack__button--close")[0
 backpackBtn.onclick = function() {
     backpackContent.style.animationName = "animateleft";
     backpack.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
     backpackContent.style.animationName = "animateback";
         setTimeout(()=> {
             backpack.style.display = 'none';
-        },300)
-}
+        },300);
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -28,6 +28,6 @@ window.onclick = function(event) {
         backpackContent.style.animationName = "animateback";
         setTimeout(()=> {
             backpack.style.display = 'none';
-        },300)
+        },300);
     }
-}
+};

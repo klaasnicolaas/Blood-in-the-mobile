@@ -1,7 +1,7 @@
 /*Styling for the airplane screen*/
 .body {
   display: inline-block;
-  min-height: 100rem;
+  min-height: 100%;
   background-color: var(--bg-color-sky);
   overflow: hidden;
   width: 100rem;
