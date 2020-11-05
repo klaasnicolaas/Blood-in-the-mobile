@@ -24,24 +24,27 @@
     animation: animateleft 2s;
 }
 
-.backpack-button {
-    background-image: url("../img/backpack.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70px;
-    width: 70px;
-    background-color: transparent;
-    color: none;
-    border-color: transparent;
-    bottom: 0;
-    left: 2%;
-    position: absolute;
+.backpack__button {
+    position: fixed;
+    width: 7rem;
+    margin: 1rem;
     cursor: pointer;
 }
 
-.backpack-header > h2{
-  font-size: 3rem;
+.backpack__button--left {
+    bottom: 0;
+    left: 0;
 }
+
+.backpack__button--right {
+    bottom: 0;
+    right: 0;
+}
+
+.backpack-header > h2{
+    font-size: 3rem;
+}
+
 /* Add Animation */
 @-webkit-keyframes animateback {
     from {left:0px; opacity:1}
@@ -64,9 +67,9 @@
     to {left:0; opacity:1}
 }
 
-img {
+/* img {
     margin: 20px;
-}
+} */
 
 .water {
     width: 10rem;
