@@ -17,17 +17,17 @@
         <article class="mine__container">
             <section class="mine__container__section">
                 <section class="mine__container__section__textbox">
-                  <p class="mine__container__section__textbox--text"
-                    id="js--hide--section">Je bent nu in de mijn. Hier wordt dagelijks kilo’s aan grondstoffen uit de mijn gehaald. </p>
+                    <p class="mine__container__section__textbox--text"
+                        id="js--hide--section">Je bent nu in de mijn. Hier wordt dagelijks kilo’s aan grondstoffen uit de mijn gehaald. </p>
                     <p class="mine__container__section__textbox--text--second"
                         id="js--type--text--second">Deze grondstoffen worden door kinderen uit de mijn gehaald, zodat deze geexporteert kunnen worden naar het buitenland </p>
                     <p class="mine__container__section__textbox--text--third"
                         id="js--type--text--third">Daar worden de grondstoffen gebruikt bij de maak van nieuwe electronica, waaronder jouw telefoon.</p>
                     <p class="mine__container__section__textbox--text--fourth"
                         id="js--type--text--fourth">Om de weg terug te vinden is het handig om te kunnen zien waar je loopt. Zorg er voor dat je kan zien waar je bent zodat je de mijn kan zien.</p>
-                  <button id="js--button-one" class="mine__container__section__textbox--button"  onclick="waithide()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
-                  <button id="js--button-two" class="mine__container__section__textbox--button--second"  onclick="waithidesecond()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
-                  <button id="js--button-three" class="mine__container__section__textbox--button--third"  onclick="waithidethird()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                    <button id="js--button-one" class="mine__container__section__textbox--button"  onclick="waithide()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                    <button id="js--button-two" class="mine__container__section__textbox--button--second"  onclick="waithidesecond()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                    <button id="js--button-three" class="mine__container__section__textbox--button--third"  onclick="waithidethird()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
                 </section>
             </section>
 
@@ -38,7 +38,7 @@
                 <section class="backpack-content" id="js--backpackContent">
                     <!-- Modal Header -->
                     <section class="backpack-header">
-                      <h2>Jouw rugzak</h2>
+                        <h2>Jouw rugzak</h2>
                     </section>
 
                     <!-- Modal Body -->
@@ -53,10 +53,10 @@
                             <img src="../assets/img/icons/water-bottle.webp" alt="water" class="water">
                         </section>
                         <section class="backpack__grid-item">
-                            <img src="../assets/img/icons/pocket-knife.webp" alt="zakmes" class="water">
+                            <img src="../assets/img/icons/pocket-knife.webp" alt="zakmes" class="knife">
                         </section>
                         <section class="backpack__grid-item">
-                            <img src="../assets/img/icons/map.webp" alt="kaart" class="water">
+                            <img src="../assets/img/icons/map.webp" alt="kaart" class="map">
                         </section>
                     </section>
 
@@ -67,11 +67,14 @@
                 </section>
             </section>
 
-            <!-- Trigger/Open The Modal -->
-            <button id="js--backpackBtn" class="backpack-button"></button>
+            <!-- Backpack -Trigger/Open The Modal -->
+            <picture>
+                <img id="js--backpackBtn" class="backpack__button backpack__button--left" src="../assets/img/icons/backpack.webp" alt="rugzak">
+            </picture>
         </article>
 
         <!-- Script import -->
         <script type="text/javascript" src="./assets/js/indemijn.js"></script>
+        <script type="text/javascript" src="../assets/js/backpack.js"></script>
     </body>
 </html>

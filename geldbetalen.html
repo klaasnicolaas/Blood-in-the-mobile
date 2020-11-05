@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./assets/css/betalen.css">
-  <link rel="stylesheet" href="./assets/css/backpack.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Toegang krijgen</title>
-</head>
-<body class="body__flex">
-  <article class="betalen__container">
-    <section class="betalen">
-      <p class="betalen__tekst">Rond de mijnen van Congo zijn veel rebelllen groepen. Om toegang te krijgen is het nodig om deze groepen geld te betalen.</p>
-      <img src="./assets/img/rebellen-640.webp"
-           alt="rebellen"
-           srcset="./assets/img/rebellen-640.webp 640w, ./assets/img/rebellen-1280.webp 1280w, ./assets/img/rebellen-1920.webp 1920w"
-           sizes="calc(100vw/12*4)"
-           class="betalen__img">
-        <section class="betalen__container__bedrag">
-          <p class="betalen__bedrag">Te betalen bedrag:</p>
-          <section class="betalen__container__bedrag__box" id="js--box">
-            <section class="betalen__bedrag__box"><p>15 Frank</p></section>
-        </section>
-        <section class="loader" id="js--loader">
-          <section class="loader__image">
-            <section class="loader__coin">
-              <img src="./assets/img/loader-coin.webp" alt="loader coin">
+        <title>Toegang krijgen</title>
+
+        <link rel="stylesheet" href="./assets/css/betalen.css">
+        <link rel="stylesheet" href="./assets/css/backpack.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+    </head>
+    <body class="body__flex">
+        <article class="betalen__container">
+            <section class="betalen">
+              <p class="betalen__tekst">Rond de mijnen van Congo zijn veel rebelllen groepen. Om toegang te krijgen is het nodig om deze groepen geld te betalen.</p>
+              <img src="./assets/img/rebellen-640.webp"
+                  alt="rebellen"
+                  srcset="./assets/img/rebellen-640.webp 640w, ./assets/img/rebellen-1280.webp 1280w, ./assets/img/rebellen-1920.webp 1920w"
+                  sizes="calc(100vw/12*4)"
+                  class="betalen__img">
+                <section class="betalen__container__bedrag">
+                  <p class="betalen__bedrag">Te betalen bedrag:</p>
+                  <section class="betalen__container__bedrag__box" id="js--box">
+                    <section class="betalen__bedrag__box"><p>15 Frank</p></section>
+                </section>
+                <section class="loader" id="js--loader">
+                  <section class="loader__image">
+                    <section class="loader__coin">
+                      <img src="./assets/img/loader-coin.webp" alt="loader coin">
+                    </section>
+                    <section class="loader__hand">
+                      <img src="./assets/img/loader-hand.webp" alt="loader hand">
+                    </section>
+                </section>
+                </section>
+                <section>
+                </section>
+                <section class="betalen__container__accepted" id="js--accepted">
+                  <section class="betalen__bedrag__accepted"><p>Toegang gekregen</p></section>
+              </section>
+              </section>
+
+
+
             </section>
-            <section class="loader__hand">
-              <img src="./assets/img/loader-hand.webp" alt="loader hand">
+
+            <!-- The Modal -->
+            <section id="js--backpack" class="backpack">
+
+              <!-- Modal content -->
+              <section class="backpack-content" id="js--backpackContent">
+                <section class="backpack-header">
+                  <h2>Jouw rugzak</h2>
+                </section>
+                <section class="backpack-body">
+                  <section class="backpack__grid-item">
+                    <img src="../assets/img/icons/lantern.webp" alt="Lamp" class="lamp">
+                  </section>
+                  <section class="backpack__grid-item">
+                    <img src="../assets/img/icons/money.webp" alt="geld" onclick="moneyClicked()" class="money">
+                  </section>
+                  <section class="backpack__grid-item">
+                <img src="../assets/img/icons/water-bottle.webp" alt="water" class="water">
+              </section>
+                  <section class="backpack__grid-item">
+                    <img src="../assets/img/icons/pocket-knife.webp" alt="zakmes" class="knife">
+                  </section>
+                  <section class="backpack__grid-item">
+                    <img src="../assets/img/icons/map.webp" alt="kaart" class="map">
+                  </section>
+                </section>
+                <section class="backpack-footer">
+                <button type="button" name="button" class="backpack__button--close"><i class="fas fa-arrow-left"></i></button>
+              </section>
             </section>
-        </section>
-        </section>
-        <section>
-        </section>
-        <section class="betalen__container__accepted" id="js--accepted">
-          <section class="betalen__bedrag__accepted"><p>Toegang gekregen</p></section>
-      </section>
-      </section>
 
+            </section>
 
+            <!-- Backpack -Trigger/Open The Modal -->
+            <picture>
+                <img id="js--backpackBtn" class="backpack__button backpack__button--left" src="../assets/img/icons/backpack.webp" alt="rugzak">
+            </picture>
+        </article>
 
-    </section>
-
-
-
-    <!-- The Modal -->
-    <section id="js--backpack" class="backpack">
-
-      <!-- Modal content -->
-      <section class="backpack-content" id="js--backpackContent">
-        <section class="backpack-header">
-          <h2>Jouw rugzak</h2>
-        </section>
-        <section class="backpack-body">
-          <section class="backpack__grid-item" id="js--lamp">
-            <img src="../assets/img/icons/lantern.webp" alt="Lamp" class="lamp">
-          </section>
-          <section class="backpack__grid-item">
-            <img src="../assets/img/icons/money.webp" alt="geld" onclick="moneyClicked()" class="money">
-          </section>
-          <section class="backpack__grid-item">
-        <img src="../assets/img/icons/water-bottle.webp" alt="water" class="water">
-      </section>
-          <section class="backpack__grid-item">
-            <img src="../assets/img/icons/pocket-knife.webp" alt="zakmes" class="knife">
-          </section>
-          <section class="backpack__grid-item">
-            <img src="../assets/img/icons/map.webp" alt="kaart" class="map">
-          </section>
-        </section>
-        <section class="backpack-footer">
-        <button type="button" name="button" class="backpack__button--close"><i class="fas fa-arrow-left"></i></button>
-      </section>
-    </section>
-
-  </section>
-
-    <!-- Trigger/Open The Modal -->
-    <button id="js--backpackBtn" class="backpack-button"></button>
-
-  </article>
-
-  <script type="text/javascript" src="./assets/js/indemijn.js">
-
-  </script>
-
-</body>
+        <script type="text/javascript" src="./assets/js/indemijn.js"></script>
+        <script type="text/javascript" src="../assets/js/backpack.js"></script>
+    </body>
 </html>
