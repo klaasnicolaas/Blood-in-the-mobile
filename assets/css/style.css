@@ -21,6 +21,7 @@
     --accepted: #477A4C;
 }
 
+/* HTML elements */
 html {
     font-size: 62.5%;
 }
@@ -51,6 +52,13 @@ h2 {
 p {
     font-size: 1.8rem;
     padding: 0.5rem 0 0.5rem 0;
+}
+
+/* CSS Classes */
+.body__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {

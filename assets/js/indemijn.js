@@ -6,12 +6,10 @@ var text2 = document.getElementById("js--type--text--second");
 var text3 = document.getElementById("js--type--text--third");
 var text4 = document.getElementById("js--type--text--fourth");
 
-function waithide()
-{
+function waithide() {
   text1.style.opacity = '0';
   window.setTimeout(
-    function removethis()
-    {
+    function removethis() {
       text1.style.display='none';
       button.style.display= "none";
       text2.style.display="block";
@@ -19,13 +17,12 @@ function waithide()
     }, 800);
 }
 
-function waithidesecond()
-{
+function waithidesecond() {
   text2.style.opacity = '0';
   text3.style.opacity = "1";
   window.setTimeout(
-    function removethis()
-    {
+    function removethis() {
+
       text2.style.display='none';
       buttonSecond.style.display= "none";
       text3.style.display="block";
@@ -33,12 +30,10 @@ function waithidesecond()
     }, 800);
 }
 
-function waithidethird()
-{
+function waithidethird() {
   text3.style.opacity = '0';
   window.setTimeout(
-    function removethis()
-    {
+    function removethis() {
       text3.style.display="none";
       buttonThird.style.display= "none";
       text4.style.display="block";
@@ -65,9 +60,11 @@ backpackBtn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
   backpackContent.style.animationName = "animateback";
+
      setTimeout(()=>{
        backpack.style.display = 'none';
      },300)
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -79,24 +76,13 @@ window.onclick = function(event) {
        },300)
   }
 }
-
-function lampClicked() {
-  if (text4.style.display === "block") {
-    location.href="indemijntwee.html";
-  }
-}
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+//
+// function lampClicked() {
+//       setTimeout(()=>{
+//         backpack.style.display = 'none';
+//       },300)
+//   }
+// }
 
 var loader = document.getElementById("js--loader");
 var bedragbox = document.getElementById("js--box");
@@ -115,7 +101,29 @@ function moneyClicked(){
     location.href="test.html";
   },5000)
 
+}
+
+function lampClicked() {
+  if (text4.style.display === "block") {
+    location.href="indemijntwee.html";
+  }
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
 
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
