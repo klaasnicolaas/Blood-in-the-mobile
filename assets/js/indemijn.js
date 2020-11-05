@@ -68,10 +68,11 @@ var loader = document.getElementById("js--loader");
 var bedragbox = document.getElementById("js--box");
 var toegang =  document.getElementById("js--accepted");
 
-function moneyClicked(){
-  loader.style.display = "block";
-  bedragbox.style.display = "none";
-  backpack.style.display = "none";
+function moneyClicked() {
+  console.log(loader);
+  // loader.style.display = "block";
+  // bedragbox.style.display = "none";
+  // backpack.style.display = "none";
 
   setTimeout(()=> {
     loader.style.display = 'none';
