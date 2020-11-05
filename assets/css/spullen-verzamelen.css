@@ -19,29 +19,28 @@
 
 /* Items positions */
 .lantern {
-    right: 280px;
-    bottom: 435px;
+    right: 28rem;
+    bottom: 43.5rem;
 }
 
 .water-bottle {
-    right: 205px;
-    bottom: 200px;
+    right: 20.5rem;
+    bottom: 20rem;
 }
 
 .map {
-    right: 810px;
-    bottom: 100px;
+    right: 81rem;
+    bottom: 10rem;
 }
 
 .money {
-    left: 730px;
-    bottom: 300px;
+    left: 73rem;
+    bottom: 30rem;
 }
 
 .pocket-knife {
-    /* display: block; */
-    left: 200px;
-    bottom: 150px;
+    left: 20rem;
+    bottom: 15rem;
 }
 
 /* Item grote */
@@ -74,7 +73,7 @@
 .item_box {
     position: absolute;
     display: none;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--black);
     border-radius: 1rem;
     padding: 1rem;
     background-color: var(--bg-color-light);
@@ -82,19 +81,19 @@
 
 .item_box > p {
     font-size: 1.5rem;
-    color: white;
+    color: var(--white);
 }
 
 #item_box--pocket_knife {
-    bottom: 75px;
-    left: -115px;
+    bottom: 7.5rem;
+    left: -11.5rem;
     width: 28rem;
     height: 14rem;
 }
 
 #item_box--money {
-    top: 50px;
-    left: -100px;
+    top: 5rem;
+    left: -10rem;
     width: 28rem;
     height: 16rem;
 }
@@ -127,7 +126,7 @@
     margin: 7rem auto;
     width: 15rem;
     height: 5rem;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .button--add-to-backpack {
@@ -139,7 +138,7 @@
 
 .button--add-to-backpack:hover, .button--next:hover {
     background: var(--button-hover-orange);
-    color: white;
+    color: var(--white);
 }
 
 .background > picture {
@@ -160,24 +159,13 @@
     margin-right: auto;
     width: 35rem;
     height: 17rem;
-    border: 0.3rem solid black;
-    background-color: white;
+    border: 0.3rem solid var(--black);
+    background-color: var(--white);
 }
 
 .section__textbox > p {
     font-size: 1.6rem;
 }
-
-/* .section__textbox--completed {
-    top: 35%;
-    display: none;
-    background-color: var(--bg-color-light);
-    color: white;
-}
-
-.section__textbox--completed > h2, .section__textbox--completed > p {
-    text-align: center;
-} */
 
 #section__adventure-guy {
     display: none;

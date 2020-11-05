@@ -7,14 +7,14 @@ body {
   background-image: url("../img/applestore.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: grid;
-  width: 100vw;
+  height: 100rem;
+  display: block;
+  width: 100rem;
 }
 
 .section__textbox {
-  background-color: white;
-  border: 0.3rem solid black;
+  background-color: var(--white);
+  border: 0.3rem solid var(--black);
   height: 21rem;
   width: 35rem;
 }
@@ -34,14 +34,14 @@ body {
   right: 3%;
   width: 11rem;
   height: 4rem;
-  background-color: white;
+  background-color: var(--white);
   font-size: 3rem;
   cursor: pointer;
 }
 
 .button--next:hover {
     background-color: var(--button-hover-orange);
-    color: white;
+    color: var(--white);
 }
 
 .container__character{
@@ -71,6 +71,29 @@ body {
   transform: translate(-50%, -50%);
   transition: 0.8s;
 }
+
+/*Support Query*/
+@supports (height: 100vh) {
+  .container {
+    height: 100vh;
+
+  }
+}
+
+@supports (width: 100vw) {
+  .container {
+    width: 100vw;
+
+  }
+}
+
+@supports (display: grid) {
+  .container {
+    display: grid;
+
+  }
+}
+
 
 /* Tablet view */
 @media (min-width: 768px) {

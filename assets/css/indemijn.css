@@ -3,14 +3,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    height: 100vh;
-    display: grid;
-    width: 100vw;
+    height: 100rem;
+    display: block;
+    width: 100rem;
 }
 
 .mine__container__section {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 .mine__container__section__textbox--text--second,
@@ -21,10 +20,10 @@
 
 .mine__container__section__textbox {
     margin-top: 2rem;
-    background-color: white;
+    background-color: var(--white);
     height: 16rem;
     width: 30rem;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--black);
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
@@ -72,7 +71,34 @@
 .mine__container__section__textbox--button--second:hover,
 .mine__container__section__textbox--button--third:hover {
     background: var(--button-hover-orange);
-    color: white;
+    color: var(--white);
+}
+
+/*Support Query*/
+@supports (height: 100vh) {
+  .mine__container{
+    height: 100vh;
+  }
+}
+
+@supports (width: 100vw) {
+  .mine__container{
+    width: 100vw;
+  }
+}
+
+@supports (display: flex) {
+  .mine__container__section {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@supports (display: grid) {
+  .mine__container{
+    display: grid;
+  }
+
 }
 
 @media (min-width:600px) {
