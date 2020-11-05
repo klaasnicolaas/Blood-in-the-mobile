@@ -1,3 +1,11 @@
+/* Scroll container */
+.scroll {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+}
+
 .background {
     position: absolute;
     height: 100%;
@@ -31,7 +39,7 @@
 }
 
 .pocket-knife {
-    display: block;
+    /* display: block; */
     left: 200px;
     bottom: 150px;
 }
@@ -132,14 +140,6 @@
 .button--add-to-backpack:hover, .button--next:hover {
     background: var(--button-hover-orange);
     color: white;
-}
-
-/* Scroll container */
-.scroll {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
 }
 
 .background > picture {

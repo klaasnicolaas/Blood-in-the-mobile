@@ -83,8 +83,6 @@ function lampClicked() {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -100,16 +98,13 @@ function moneyClicked(){
   loader.style.display = "block";
   bedragbox.style.display = "none";
   backpack.style.display = "none";
-  setTimeout(()=>{
+
+  setTimeout(()=> {
     loader.style.display = 'none';
     toegang.style.display = "block";
   },3000)
 
-  setTimeout(()=>{
+  setTimeout(()=> {
     location.href="test.html";
   },5000)
-
-
-
-
 }
