@@ -142,11 +142,11 @@
     color: white;
 }
 
-.background > picture {
+.background > section {
     position: absolute;
 }
 
-.background > picture > img {
+.background > section > img {
     position: relative;
 }
 
