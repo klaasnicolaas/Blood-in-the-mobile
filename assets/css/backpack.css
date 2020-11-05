@@ -39,6 +39,9 @@
     cursor: pointer;
 }
 
+.backpack-header > h2{
+  font-size: 3rem;
+}
 /* Add Animation */
 @-webkit-keyframes animateback {
     from {left:0px; opacity:1}

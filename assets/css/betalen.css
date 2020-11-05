@@ -11,8 +11,11 @@
 .betalen__img{
   width: 28rem;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .betalen__bedrag{
@@ -86,4 +89,69 @@
 
 .betalen__bedrag__accepted > p {
   text-transform: uppercase;
+}
+@media (min-width: 375px) {
+  .betalen{
+    width: 35rem;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px ) {
+  .betalen__bedrag__box, .betalen__container__accepted{
+    margin-top: 3rem;
+  }
+  .loader{
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .betalen{
+    width: 40rem;
+  }
+  .betalen__bedrag__box, .betalen__container__accepted{
+    margin-top: 3rem;
+  }
+  .loader{
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .betalen__img{
+    width: 40rem;
+  }
+  .betalen{
+    width: 70rem;
+  }
+  .betalen__tekst, .betalen__bedrag{
+    font-size: 2.6rem;
+  }
+  .betalen__bedrag__box{
+    width: 25rem;
+    height: 7rem;
+  }
+  .betalen__bedrag__box > p{
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .betalen__img{
+    width: 60rem;
+  }
+  .betalen{
+    width: 75rem;
+  }
+  .betalen__tekst, .betalen__bedrag{
+    font-size: 3rem;
+  }
+  .betalen__bedrag__box{
+    width: 25rem;
+    height: 7rem;
+  }
+  .betalen__bedrag__box > p{
+    font-size: 3rem;
+  }
+
 }

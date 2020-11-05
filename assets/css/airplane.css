@@ -52,7 +52,25 @@
 .earth:active img {
   transform: scale(0.2);
 }
+.airplane{
+  width: 200px;
+  height: 300px;
 
+}
+
+@media (min-width: 890px) {
+  .earth{
+    width: 600px;
+    height: 600px;
+}
+    .airplane{
+      width: 300px;
+      height: 300px;
+
+    }
+
+
+}
 @keyframes animate {
   0%{
     background-position: 0 0;
