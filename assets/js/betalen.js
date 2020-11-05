@@ -49,7 +49,7 @@ function moneyClicked(){
   },3000);
 
   setTimeout(()=>{
-    location.href="test.html";
+    location.href="voordemijn.html";
   },5000);
 
 

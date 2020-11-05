@@ -6,10 +6,21 @@
         <title>Kaart - Blood in the Mobile</title>
 
         <link rel="stylesheet" href="./assets/css/kaart.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     </head>
-    <body>
+    <body class="body">
+
+      <!-- Info box with instructions -->
+      <section class="section__container">
+          <section id="js--textbox_info" class="section__textbox">
+              <h2 class="section__textbox__h2">Ga op reis naar Congo!</h2>
+              <p>De plek waar alles begint. En ontdek hoe jouw mobiel gemaakt wordt.</p>
+          </section>
+      </section>
         <div id="kaart"></div>
+
+
         <script src="./assets/js/data/landen.js"></script>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <script src="./assets/js/kaart.js"></script>
