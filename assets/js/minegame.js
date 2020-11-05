@@ -5,8 +5,8 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 
-let ini= document.querySelector('#modal-window');
-ini.classList.add("hideModal");
+let successModal= document.querySelector('#modal-window');
+successModal.classList.add("hideModal");
 
 let failureModal= document.querySelector('#modal-window-failure');
 failureModal.classList.add("hideModal");
