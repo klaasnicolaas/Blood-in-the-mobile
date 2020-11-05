@@ -13,8 +13,12 @@
     --character-body-color: #2E2E2E;
     --bg-color-sky: #f4faff;
     --blue-earth-color: #0588e4;
+    --mine-block-brown: #c29467;
+    --white: #ffffff;
+    --black: #000000;
 }
 
+/* HTML elements */
 html {
     font-size: 62.5%;
 }
@@ -22,9 +26,6 @@ html {
 body {
     background-color: var(--bg-color-dark);
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
@@ -41,6 +42,13 @@ h2 {
 p {
     font-size: 1.8rem;
     padding: 0.5rem 0 0.5rem 0;
+}
+
+/* CSS Classes */
+.body__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>In de mijn</title>
+
+        <!-- Style import -->
+        <link rel="stylesheet" href="./assets/css/indemijn.css">
+        <link rel="stylesheet" href="./assets/css/backpack.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    </head>
+    <body class="body__flex">
+        <article class="mine__container">
+            <section class="mine__container__section">
+                <section class="mine__container__section__textbox">
+                  <p class="mine__container__section__textbox--text"
+                    id="js--hide--section">Je bent nu in de mijn. Hier wordt dagelijks kilo’s aan grondstoffen uit de mijn gehaald. </p>
+                    <p class="mine__container__section__textbox--text--second"
+                        id="js--type--text--second">Deze grondstoffen worden door kinderen uit de mijn gehaald, zodat deze geexporteert kunnen worden naar het buitenland </p>
+                    <p class="mine__container__section__textbox--text--third"
+                        id="js--type--text--third">Daar worden de grondstoffen gebruikt bij de maak van nieuwe electronica, waaronder jouw telefoon.</p>
+                    <p class="mine__container__section__textbox--text--fourth"
+                        id="js--type--text--fourth">Om de weg terug te vinden is het handig om te kunnen zien waar je loopt. Zorg er voor dat je kan zien waar je bent zodat je de mijn kan zien.</p>
+                  <button id="js--button-one" class="mine__container__section__textbox--button"  onclick="waithide()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                  <button id="js--button-two" class="mine__container__section__textbox--button--second"  onclick="waithidesecond()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                  <button id="js--button-three" class="mine__container__section__textbox--button--third"  onclick="waithidethird()" type="button" name="button"><i class="fas fa-angle-right"></i></button>
+                </section>
+            </section>
+
+            <!-- The Modal -->
+            <section id="js--backpack" class="backpack">
+
+                <!-- Modal content -->
+                <section class="backpack-content" id="js--backpackContent">
+                    <!-- Modal Header -->
+                    <section class="backpack-header">
+                      <h2>Jouw rugzak</h2>
+                    </section>
+
+                    <!-- Modal Body -->
+                    <section class="backpack-body">
+                        <section class="backpack__grid-item" id="js--lamp" onclick="myFunction()">
+                            <img src="../assets/img/icons/lantern.svg" alt="Lamp" class="lamp">
+                        </section>
+                        <section class="backpack__grid-item">
+                            <img src="../assets/img/icons/money.svg" alt="geld" class="money">
+                        </section>
+                        <section class="backpack__grid-item">
+                            <img src="../assets/img/icons/water-bottle.svg" alt="water" class="water">
+                        </section>
+                        <section class="backpack__grid-item">
+                            <img src="../assets/img/icons/pocket-knife.svg" alt="zakmes" class="water">
+                        </section>
+                        <section class="backpack__grid-item">
+                            <img src="../assets/img/icons/map.svg" alt="kaart" class="water">
+                        </section>
+                    </section>
+
+                    <!-- Modal Footer -->
+                    <section class="backpack-footer">
+                        <button type="button" name="button" class="backpack__button--close"><i class="fas fa-arrow-left"></i></button>
+                    </section>
+                </section>
+            </section>
+
+            <!-- Trigger/Open The Modal -->
+            <button id="js--backpackBtn" class="backpack-button"></button>
+        </article>
+
+        <!-- Script import -->
+        <script type="text/javascript" src="./assets/js/indemijn.js"></script>
+    </body>
+</html>
