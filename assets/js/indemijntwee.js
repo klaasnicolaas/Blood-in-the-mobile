@@ -1,3 +1,7 @@
+var audio = document.getElementById("js--audio");
+audio.volume = 0.2;
+audio.loop = true;
+
 // Get the backpack modal
 var backpack = document.getElementById("js--backpack");
 var backpackContent = document.getElementById("js--backpackContent");
@@ -17,7 +21,6 @@ backpackBtn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
 	backpackContent.style.animationName = "animateback";
-
 	setTimeout(() => {
 		backpack.style.display = 'none';
 	}, 300);
