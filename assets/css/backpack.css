@@ -64,16 +64,13 @@
   to {left:0; opacity:1}
 }
 
-
- img{
+img{
   margin: 20px;
 }
-
 
 .water{
   width: 100px;
   height: 120px;
-
 }
 .lamp{
   width: 100px;
@@ -90,7 +87,6 @@
 .knife{
   width: 100px;
   height: 100px;
-
 }
 
 .backpack-body {
