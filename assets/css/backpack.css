@@ -39,6 +39,9 @@
     cursor: pointer;
 }
 
+.backpack-header > h2{
+  font-size: 3rem;
+}
 /* Add Animation */
 @-webkit-keyframes animateback {
     from {left:0px; opacity:1}
@@ -66,17 +69,28 @@ img {
 }
 
 .water {
-    width: 80px;
-    height: 150px;
+    width: 10rem;
+    height: 12rem;
+}
 
-}
 .lamp {
-    width: 150px;
-    height: 120px;
+    width: 10rem;
+    height: 12rem;
 }
+
 .money {
-    width: 150px;
-    height: 80px;
+    width: 10rem;
+    height: 8rem;
+}
+
+.map {
+    width: 10rem;
+    height: 8rem;
+}
+
+.knife {
+    width: 10rem;
+    height: 10rem;
 }
 
 .backpack-body {
