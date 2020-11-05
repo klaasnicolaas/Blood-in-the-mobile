@@ -76,32 +76,8 @@ window.onclick = function(event) {
        },300)
   }
 }
-//
-// function lampClicked() {
-//       setTimeout(()=>{
-//         backpack.style.display = 'none';
-//       },300)
-//   }
-// }
 
-var loader = document.getElementById("js--loader");
-var bedragbox = document.getElementById("js--box");
-var toegang =  document.getElementById("js--accepted");
 
-function moneyClicked(){
-  loader.style.display = "block";
-  bedragbox.style.display = "none";
-  backpack.style.display = "none";
-  setTimeout(()=>{
-    loader.style.display = 'none';
-    toegang.style.display = "block";
-  },3000)
-
-  setTimeout(()=>{
-    location.href="test.html";
-  },5000)
-
-}
 
 function lampClicked() {
   if (text4.style.display === "block") {
@@ -109,43 +85,21 @@ function lampClicked() {
   }
 }
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-var loader = document.getElementById("js--loader");
-var bedragbox = document.getElementById("js--box");
-var toegang =  document.getElementById("js--accepted");
-
-function moneyClicked(){
-  loader.style.display = "block";
-  bedragbox.style.display = "none";
-  backpack.style.display = "none";
-  setTimeout(()=>{
-    loader.style.display = 'none';
-    toegang.style.display = "block";
-  },3000)
-
-  setTimeout(()=>{
-    location.href="test.html";
-  },5000)
-
-
-
-
-}
+// // Get the modal van in de mijn 2
+// var modal = document.getElementById("myModal");
+//
+// // Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+//
+// // When the user clicks the button, open the modal
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+//
+//
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
