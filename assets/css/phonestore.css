@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-image: url("../img/applestore.jpg");
+  background-image: url("../img/applestore.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -36,6 +36,7 @@ body {
   height: 4rem;
   background-color: white;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .button--next:hover {
@@ -87,6 +88,10 @@ body {
     height: 6rem;
     width: 16rem;
     font-size: 5rem;
+  }
+  .section__textbox{
+    width: 35rem;
+    height: 20rem;
   }
 
   .button--next > p {

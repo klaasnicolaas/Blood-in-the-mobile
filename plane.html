@@ -13,8 +13,11 @@
 
 
 <div class="earth" id="earth">
-  <img src="./assets/img/plane.png" alt="Plane">
-  <audio autoplay  id="playAudio">
+  <img src="./assets/img/plane.webp" alt="Plane"
+       srcset="./assets/img/plane-640.webp 640w, ./assets/img/plane-1280.webp 1280w, ./assets/img/plane-1920.webp 1920w"
+       sizes="calc(100vw/12*4)"
+       class="airplane">
+  <audio autoplay  id="myaudio">
     <source src="./assets/audio/plane.mp3">
   </audio>
 </div>
