@@ -1,11 +1,32 @@
+.body__flex{
+  -webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-0.5deg); }
+	20% { -webkit-transform: translate(-2px, 0px) rotate(0.5deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(0.5deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-0.5deg); }
+	60% { -webkit-transform: translate(-2px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-0.5deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(0.5deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); }
+}
 .mine__container {
     background-image: url("../img/mine-1920.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    height: 100vh;
-    display: grid;
-    width: 100vw;
+    height: 100rem;
+    display: block;
+    width: 100rem;
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -46,8 +67,7 @@
 }
 
 .mine__container__section {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 .mine__container__section__textbox--second {
@@ -56,10 +76,10 @@
 
 .mine__container__section__textbox {
     margin-top: 2rem;
-    background-color: white;
+    background-color: var(--white);
     height: 16rem;
     width: 30rem;
-    border: 0.3rem solid black;
+    border: 0.3rem solid var(--black);
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
@@ -78,7 +98,7 @@
     width: 4rem;
     height: 4rem;
     border: none;
-    background: white;
+    background: var(--white);
     font-size: 3rem;
     cursor: pointer;
 }
@@ -92,25 +112,22 @@
     width: 15rem;
     height: 15rem;
     background-color: transparent;
-    /* border: 0.3rem solid white; */
     position: absolute;
     right: 7%;
     bottom: 20%;
     cursor: pointer;
 }
-
-/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 5rem;
     left: 0;
     right: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: black; /* Fallback color */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--black);
     opacity: 1;
 }
 
@@ -118,16 +135,16 @@
 .modal-content {
     left: 0;
     right: 0;
-    background-color: #fefefe;
+    background-color: var(--modal-white);
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 2rem;
+    border: 0.1rem solid var(--grey);
     border-radius: 2rem;
     margin-top: 2rem;
     width: 80%;
     height: 80%;
-    color: white;
-    background-color: black;
+    color: var(--white);
+    background-color: var(--black);
     font-size: 2rem;
     line-height: 2.5rem;
 }
@@ -141,15 +158,15 @@
     font-size: 1.8rem;
     cursor: pointer;
     border-radius: 1rem;
-    background-color: #222222;
+    background-color: var(--bg-color-dark);
     color: white;
-    border: 0.4rem solid  #FA964D;
+    border: 0.4rem solid  var(--button-hover-orange);
 }
 
 .modal-button:hover {
-    background-color: #FA964D;
-    color: white;
-    border: 0.3rem solid  white;
+    background-color: var(--button-hover-orange);
+    color: var(--white);
+    border: 0.3rem solid  var(--white);
 }
 
 @keyframes blink {
@@ -158,6 +175,32 @@
     100%{opacity: 0.4;}
 }
 
+/*Support Query*/
+@supports (height: 100vh) {
+  .mine__container{
+    height: 100vh;
+  }
+}
+
+@supports (width: 100vw) {
+  .mine__container{
+    width: 100vw;
+  }
+}
+
+@supports (display: flex) {
+  .mine__container__section {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@supports (display: grid) {
+  .mine__container{
+    display: grid;
+  }
+
+}
 @media (min-width: 375px) and (min-height: 667px) {
     .square {
         width: 18rem;
@@ -242,7 +285,7 @@
 
     .modal-content {
         max-width: 60%;
-        height: 40%;
+        height: 50%;
     }
 }
 

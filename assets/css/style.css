@@ -18,6 +18,9 @@
     --white: #ffffff;
     --black: #000000;
     --accepted: #477A4C;
+    --modal-white: #fefefe;
+    --backpack-header-black: #212121;
+    --grey: #888;
 }
 
 /* HTML elements */
@@ -28,7 +31,7 @@ html {
 body {
     background-color: var(--bg-color-dark);
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
+    height: 100rem;
 }
 
 h1 {
@@ -48,9 +51,7 @@ p {
 
 /* CSS Classes */
 .body__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 
 .button {
@@ -61,8 +62,7 @@ p {
 }
 
 .section__container {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 .section__textbox {
@@ -71,4 +71,25 @@ p {
     padding: 1rem;
     position: relative;
     transition: 0.8s;
+}
+
+/*Support Query*/
+@supports (height: 100vh) {
+  body {
+    height: 100vh;
+
+  }
+}
+
+@supports (display: flex) {
+  .body__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__container {
+      display: flex;
+      justify-content: center;
+  }
+
 }

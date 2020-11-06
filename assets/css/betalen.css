@@ -1,5 +1,5 @@
 .betalen__container{
-  height: 100vh;
+  height: 100rem;
 }
 .betalen{
   color: var(--white);
@@ -13,9 +13,7 @@
   padding: 0;
   margin: 0 auto;
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 }
 
 .betalen__bedrag{
@@ -27,21 +25,21 @@
   color: var(--white);
   width: 20rem;
   height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   background-color: var(--betalen-bg-color);
   border: none;
-
 }
 
 .betalen__bedrag__box > p{
   font-size: 2.3rem;
 }
-.betalen__container__bedrag__box, .betalen__container__accepted{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.betalen__container__bedrag__box{
+  display: inline-block;
+  width: 25rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.betalen__container__accepted{
   width: 25rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -61,10 +59,9 @@
   margin: auto;
   display: none;
 }
+
 .loader__image{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
 }
 
 .loader__coin{
@@ -80,12 +77,39 @@
   color: var(--accepted);
   height: 5rem;
   width: 25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   border-radius: 0.4rem;
-
 }
+
+/*Support Query*/
+@supports (height: 100vh) {
+  .betalen__container{
+    height: 100vh;
+  }
+}
+@supports (display: flex) {
+  .betalen__img, .betalen__bedrag__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .betalen__container__bedrag__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .betalen__bedrag__accepted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .betalen__bedrag__accepted > p {
   text-transform: uppercase;
