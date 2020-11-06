@@ -7,8 +7,6 @@ var car__image = document.getElementsByClassName('car__image')[0];
 var textbox_header = document.getElementById('js--textbox_header');
 var textbox_content = document.getElementById('js--textbox_content');
 
-// TODO: Het detecteren van een touch beweging
-
 // Het detecteren van een mouse scroll beweging
 function findScrollDirectionOtherBrowsers(event){
     var delta;
@@ -21,10 +19,10 @@ function findScrollDirectionOtherBrowsers(event){
     if (autoPech != true) {
         if (delta < 0) {
             // Show back side of car
-            car__image.src = "../assets/img/deel-3/car-back.svg";
+            car__image.src = "/assets/img/deel-3/car-back.svg";
         } else if (delta > 0) {
             // Show front side of car
-            car__image.src = "../assets/img/deel-3/car-front.svg";
+            car__image.src = "/assets/img/deel-3/car-front.svg";
         }
     }
 }
@@ -40,11 +38,11 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop > 1600) {
         console.log("Je bent bij een checkpoint");
-        window.location.href = '../geldbetalen.html';
+        window.location.href = '/checkpoint.html';
     } else if (autoPech == false && scrollTop > 1000 && scrollTop < 1100) {
         autoPech = true;
         console.log("Ojeee de motor heeft het begeven");
-        car__image.src = "../assets/img/deel-3/car-side.svg";
+        car__image.src = "/assets/img/deel-3/car-side.svg";
         scrollableElement.classList.add("scroll--block");
 
         // PLAY SOUND
@@ -60,8 +58,6 @@ window.addEventListener('scroll', function() {
     car__image.style.width = 300 - scrollPercent*110 + 'px';
 });
 
-// TODO: Als max is bereikt ga door naar volgende pagina
-
 // Functie wanneer je op de zakmes klikts
 function knifeClicked() {
     console.log("Je hebt een zakmes gekozen");
@@ -69,7 +65,7 @@ function knifeClicked() {
 
     // Verwijder de optie om niet te mogen scrollen
     scrollableElement.classList.remove("scroll--block");
-    car__image.src = "../assets/img/deel-3/car-back.svg";
+    car__image.src = "/assets/img/deel-3/car-back.svg";
 
     // Verander de text in de textbox
     textbox_header.innerHTML = "Het is gelukt!";

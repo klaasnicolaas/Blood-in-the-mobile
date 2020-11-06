@@ -27,6 +27,6 @@ var backpack_counter_number = document.getElementById('backpack__count_number');
 var adventure_person = document.getElementById('section__adventure-guy');
 
 // Audio import
-var street_audio = new Audio('../assets/audio/street.mp3');
-var grab_audio = new Audio('../assets/audio/grab.mp3');
-var car_tires = new Audio('../assets/audio/tires.mp3');
+var street_audio = new Audio('/assets/audio/street.mp3');
+var grab_audio = new Audio('/assets/audio/grab.mp3');
+var car_tires = new Audio('/assets/audio/tires.mp3');

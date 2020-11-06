@@ -16,10 +16,10 @@ var demo_congo = L.geoJSON(landen, {
     },
     fillColor: '#f03'
 }).addTo(mymap);
-demo_congo.on('click', function(e) { location.href='plane.html' });
+demo_congo.on('click', function(e) { location.href='reizen.html' });
 
-L.geoJSON(landen, {
-    filter: function(feature, layer) {
-        return feature.properties.ISO_A3 == "COG";
-    }
-}).addTo(mymap);
+// L.geoJSON(landen, {
+//     filter: function(feature, layer) {
+//         return feature.properties.ISO_A3 == "COG";
+//     }
+// }).addTo(mymap);

@@ -81,6 +81,6 @@ window.onclick = function(event) {
 
 function lampClicked() {
   if (text4.style.display === "block") {
-    location.href="indemijntwee.html";
+    location.href="demijn-deel2.html";
   }
 }

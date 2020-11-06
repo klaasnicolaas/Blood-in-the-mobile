@@ -16,11 +16,11 @@ backpackBtn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
-  backpackContent.style.animationName = "animateback";
+    backpackContent.style.animationName = "animateback";
 
-     setTimeout(()=>{
-       backpack.style.display = 'none';
-     },300);
+    setTimeout(()=>{
+      backpack.style.display = 'none';
+    },300);
 
 };
 
@@ -28,9 +28,9 @@ backpackClose.onclick = function() {
 window.onclick = function(event) {
   if (event.target == backpack) {
     backpackContent.style.animationName = "animateback";
-       setTimeout(()=>{
-         backpack.style.display = 'none';
-       },300);
+      setTimeout(()=>{
+        backpack.style.display = 'none';
+      },300);
   }
 };
 
@@ -39,20 +39,16 @@ var loader = document.getElementById("js--loader");
 var bedragbox = document.getElementById("js--box");
 var toegang =  document.getElementById("js--accepted");
 
-function moneyClicked(){
+function moneyClicked() {
   loader.style.display = "block";
   bedragbox.style.display = "none";
   backpack.style.display = "none";
-  setTimeout(()=>{
+  setTimeout(()=> {
     loader.style.display = 'none';
     toegang.style.display = "block";
   },3000);
 
-  setTimeout(()=>{
-    location.href="voordemijn.html";
+  setTimeout(()=> {
+    location.href="demijn-video.html";
   },5000);
-
-
-
-
 }
