@@ -30,3 +30,11 @@ var adventure_person = document.getElementById('section__adventure-guy');
 var street_audio = new Audio('/assets/audio/street.mp3');
 var grab_audio = new Audio('/assets/audio/grab.mp3');
 var car_tires = new Audio('/assets/audio/tires.mp3');
+
+//video Import
+var video = document.getElementById("js--video");
+var videoButton = document.getElementById("js--button-video");
+
+video.onended = function() {
+  videoButton.style.display = "block";
+};
