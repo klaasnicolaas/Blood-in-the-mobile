@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-image: url("../img/applestore.webp");
+  background-image: url("/assets/img/applestore.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100rem;
@@ -97,10 +97,12 @@ body {
 
 /* Tablet view */
 @media (min-width: 768px) {
+  /* Text box */
   .section__textbox{
+    width: 65rem;
     height: 20rem;
-    width: 70rem;
   }
+
   .section__textbox > p {
     font-size: 2rem;
     margin: 1.4rem;
@@ -111,10 +113,6 @@ body {
     height: 6rem;
     width: 16rem;
     font-size: 3rem;
-  }
-  .section__textbox{
-    width: 35rem;
-    height: 20rem;
   }
 
   .button--next > p {

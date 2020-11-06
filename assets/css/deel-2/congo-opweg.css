@@ -16,7 +16,7 @@
     position: fixed;
     height: 100%;
     width: 1920px;
-    background-image: url(../img/deel-3/opweg.jpg);
+    background-image: url("/assets/img/deel-3/opweg.jpg");
     background-repeat: no-repeat;
     background-position: right 29em bottom;
     transition: 0.8s;
@@ -48,7 +48,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 35rem;
-    height: 18rem;
+    height: 19rem;
     border: 0.3rem solid black;
     background-color: white;
 }
@@ -61,17 +61,25 @@
     text-align: center;
 }
 
+/* Op basis van hoogte */
 @media (min-height: 737px) {
     .scroll {
         height: 3000px;
     }
 }
 
+/* Op basis van breedte */
+@media (min-width: 500px) {
+    .section__textbox {
+        width: 45rem;
+        height: 17rem;
+    }
+}
 
 @media (min-width: 1250px) {
     .section__textbox {
         width: 50rem;
-        height: 15rem;
+        height: 17rem;
     }
 }
 

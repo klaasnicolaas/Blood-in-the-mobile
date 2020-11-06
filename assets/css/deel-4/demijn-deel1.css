@@ -1,5 +1,5 @@
 .mine__container {
-    background-image: url("../img/minedark-1920.webp");
+    background-image: url("/assets/img/minedark-1920.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -58,12 +58,13 @@
     -ms-animation: fadeIn ease 5s;
     position: absolute;
     bottom: 5%;
-    right: 1%;
+    right: 2%;
     width: 4rem;
     height: 4rem;
     border: none;
     background: white;
     font-size: 3rem;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -76,31 +77,31 @@
 
 /*Support Query*/
 @supports (height: 100vh) {
-  .mine__container{
-    height: 100vh;
-  }
+    .mine__container{
+        height: 100vh;
+    }
 }
 
 @supports (width: 100vw) {
-  .mine__container{
-    width: 100vw;
-  }
+    .mine__container{
+        width: 100vw;
+    }
 }
 
 @supports (display: flex) {
-  .mine__container__section {
-      display: flex;
-      justify-content: center;
-  }
+    .mine__container__section {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @supports (display: grid) {
-  .mine__container{
-    display: grid;
-  }
-
+    .mine__container{
+        display: grid;
+    }
 }
 
+/* Media queries */
 @media (min-width:600px) {
     .mine__container__section__textbox {
         height: 18rem;
@@ -115,6 +116,7 @@
     }
 }
 
+/* Keyframes - animaties */
 @keyframes fadeIn {
     0% {
         opacity:0;

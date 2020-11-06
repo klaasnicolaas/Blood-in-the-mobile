@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 h1 {
     text-align: center;
     color: var(--white);
@@ -11,7 +15,7 @@ h1 {
 
 .grid__game__container {
     display: inline-block;
-    width: 30rem;
+    width: 40rem;
     margin: 0 auto;
 }
 
@@ -28,11 +32,11 @@ h1 {
 }
 
 #game {
-    width: 30rem;
+    width: 100%;
     height: 40rem;
     border: 0.1rem solid var(--black);
     margin: auto;
-    background-image: url("../img/mine.webp");
+    background-image: url("/assets/img/mine.webp");
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -44,13 +48,13 @@ h1 {
     top: 24rem;
     left: 20rem;
     z-index: 1;
-    background-image: url("../img/minecart.webp");
+    background-image: url("/assets/img/minecart.webp");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .block {
-    width: 30rem;
+    width: 100%;
     height: 2rem;
     background-color: var(--mine-block-brown);
     position: relative;
@@ -87,10 +91,10 @@ h1 {
     animation: hide;
 }
 .main-modal {
-    width:35rem;
-    height:32rem;
+    width: 35rem;
+    height: 36rem;
     background: var(--white);
-    border-radius:5%;
+    border-radius: 5%;
     text-align: center;
     margin: 2rem;
     flex-direction: column;
@@ -167,32 +171,30 @@ h1 {
 
 /*Support Query*/
 @supports (height: 100vh) {
-  .shadow {
-      height:100vh;
-  }
+    .shadow {
+        height:100vh;
+    }
 }
-
 
 @supports (display: flex) {
-  .game {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+    .game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .grid__game__container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  .shadow {
-      display:flex;
-      justify-content: center;
-      align-items: center;
+    .grid__game__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-  }
+    .shadow {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
 
 @media (min-width: 768px) {
     .grid__game__container {

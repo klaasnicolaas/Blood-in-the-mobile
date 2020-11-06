@@ -1,26 +1,14 @@
 .body__flex{
-  -webkit-animation-name: spaceboots;
+    -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 0.8s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    overflow: hidden;
 }
 
-@-webkit-keyframes spaceboots {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-0.5deg); }
-	20% { -webkit-transform: translate(-2px, 0px) rotate(0.5deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(0.5deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-0.5deg); }
-	60% { -webkit-transform: translate(-2px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-0.5deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(0.5deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); }
-}
 .mine__container {
-    background-image: url("../img/mine-1920.webp");
+    background-image: url("/assets/img/mine-1920.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -31,39 +19,6 @@
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
-}
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .mine__container__section {
@@ -77,17 +32,18 @@
 .mine__container__section__textbox {
     margin-top: 2rem;
     background-color: var(--white);
-    height: 16rem;
+    height: 20rem;
     width: 30rem;
     border: 0.3rem solid var(--black);
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
+    transition: 0.8s;
 }
 
 .mine__container__section__textbox--text,
 .mine__container__section__textbox--text--second {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 1rem;
 }
 
@@ -169,36 +125,87 @@
     border: 0.3rem solid  var(--white);
 }
 
+/* Keyframes - Animaties */
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-0.5deg); }
+	20% { -webkit-transform: translate(-2px, 0px) rotate(0.5deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(0.5deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-0.5deg); }
+	60% { -webkit-transform: translate(-2px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-0.5deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(0.5deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-0.5deg); }
+}
+
 @keyframes blink {
     0%{opacity: 0;}
     50%{opacity: .2;}
     100%{opacity: 0.4;}
 }
 
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /*Support Query*/
 @supports (height: 100vh) {
-  .mine__container{
-    height: 100vh;
-  }
+    .mine__container{
+        height: 100vh;
+    }
 }
 
 @supports (width: 100vw) {
-  .mine__container{
-    width: 100vw;
-  }
+    .mine__container{
+        width: 100vw;
+    }
 }
 
 @supports (display: flex) {
-  .mine__container__section {
-      display: flex;
-      justify-content: center;
-  }
+    .mine__container__section {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @supports (display: grid) {
-  .mine__container{
-    display: grid;
-  }
+    .mine__container{
+        display: grid;
+    }
 
 }
 @media (min-width: 375px) and (min-height: 667px) {
@@ -240,7 +247,7 @@
     }
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
     .mine__container__section__textbox {
         height: 18rem;
         width: 50rem;
@@ -250,7 +257,7 @@
     .mine__container__section__textbox--text--second,
     .mine__container__section__textbox--text--third,
     .mine__container__section__textbox--text--fourth {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 }
 
@@ -299,7 +306,7 @@
 
     .modal-content {
         max-width: 60%;
-        height: 35%;
+        height: 40%;
         font-size: 3rem;
         line-height: 5rem;
     }
