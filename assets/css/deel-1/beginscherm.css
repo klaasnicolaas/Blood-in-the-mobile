@@ -19,7 +19,7 @@
 
 /* Buttons */
 .btn {
-    border: 0.5rem solid var(--button-border);
+    border: 0.5rem solid var(--button-hover-orange);
     border-radius: 0.5rem;
     text-align: center;
     padding: 1.5rem;
@@ -71,17 +71,15 @@
 	}
 }
 
+/* Media queries */
 @media (min-width: 375px) {
-  .btn--start {
-      bottom: 9%;
-  }
-
+    .btn--start {
+        bottom: 9%;
+    }
 }
 
 @media (min-width: 700px) {
-  .btn--start {
-      bottom: 20%;
-
-  }
-
+    .btn--start {
+        bottom: 20%;
+    }
 }

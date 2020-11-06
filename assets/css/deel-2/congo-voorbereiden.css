@@ -121,15 +121,6 @@
 }
 
 /* Buttons */
-.button--next {
-    right: 0%;
-    left: 0%;
-    margin: 7rem auto;
-    width: 15rem;
-    height: 5rem;
-    background-color: white;
-}
-
 .button--add-to-backpack {
     bottom: 5%;
     right: 3%;
@@ -140,6 +131,13 @@
 .button--add-to-backpack:hover, .button--next:hover {
     background: var(--button-hover-orange);
     color: white;
+}
+
+.button__light--size {
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+    margin-top: 6rem;
 }
 
 .background > section {
