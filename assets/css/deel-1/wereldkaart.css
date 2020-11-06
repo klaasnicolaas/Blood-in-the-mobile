@@ -16,12 +16,13 @@ html, body {
   margin: 0;
 }
 
-#kaart{
+#kaart {
   width: 100%;
-  height: 78%;
+  height: 71%;
   margin: 0 auto;
   position: absolute;
   bottom: 0;
+  transition: 0.8s;
 }
 
 .section__container {
@@ -48,4 +49,10 @@ html, body {
 
 .section__textbox > p {
     font-size: 1.6rem;
+}
+
+@media (min-width: 1250px) {
+  #kaart {
+    height: 80%;
+  }
 }
