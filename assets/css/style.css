@@ -61,6 +61,21 @@ p {
     cursor: pointer;
 }
 
+.button__light {
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--button-hover-orange);
+}
+
+.button__light:hover {
+    background-color: var(--button-hover-orange);
+    color: var(--white);
+    border: 0.3rem solid  var(--white);
+}
+
 .section__container {
     display: inline-block;
 }
@@ -75,21 +90,20 @@ p {
 
 /*Support Query*/
 @supports (height: 100vh) {
-  body {
-    height: 100vh;
-
-  }
+    body {
+        height: 100vh;
+    }
 }
 
 @supports (display: flex) {
-  .body__flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .section__container {
-      display: flex;
-      justify-content: center;
-  }
+    .body__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .section__container {
+        display: flex;
+        justify-content: center;
+    }
 }

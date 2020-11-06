@@ -1,0 +1,262 @@
+/* Scroll container */
+.scroll {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 1920px;
+    background-image: url("/assets/img/deel-2/congo-background.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+
+/* Items positions */
+.lantern {
+    right: 280px;
+    bottom: 435px;
+}
+
+.water-bottle {
+    right: 205px;
+    bottom: 200px;
+}
+
+.map {
+    right: 810px;
+    bottom: 100px;
+}
+
+.money {
+    left: 730px;
+    bottom: 300px;
+}
+
+.pocket-knife {
+    /* display: block; */
+    left: 200px;
+    bottom: 150px;
+}
+
+/* Item grote */
+.lantern > img {
+    height: 6rem;
+}
+
+.water-bottle > img {
+    height: 4rem;
+}
+
+.map > img {
+    height: 5rem;
+}
+
+.money > img {
+    height: 4rem;
+}
+
+.pocket-knife > img {
+    height: 6rem;
+}
+
+/* Hover items */
+.lantern:hover, .water-bottle:hover, .map:hover, .money:hover, .pocket-knife:hover {
+    cursor: pointer;
+}
+
+/* Item info boxen */
+.item_box {
+    position: absolute;
+    display: none;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-color-light);
+}
+
+.item_box > p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#item_box--pocket_knife {
+    bottom: 75px;
+    left: -115px;
+    width: 28rem;
+    height: 14rem;
+}
+
+#item_box--money {
+    top: 50px;
+    left: -100px;
+    width: 28rem;
+    height: 16rem;
+}
+
+#item_box--lantern {
+    top: -25px;
+    right: 55px;
+    width: 22rem;
+    height: 12rem;
+}
+
+#item_box--map {
+    top: -25px;
+    left: 60px;
+    width: 28rem;
+    height: 12rem;
+}
+
+#item_box--water_bottle {
+    top: 50px;
+    left: -100px;
+    width: 25rem;
+    height: 12rem;
+}
+
+/* Buttons */
+.button--add-to-backpack {
+    bottom: 5%;
+    right: 3%;
+    width: 10rem;
+    height: 4rem;
+}
+
+.button--add-to-backpack:hover, .button--next:hover {
+    background: var(--button-hover-orange);
+    color: white;
+}
+
+.button__light--size {
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+
+.background > section {
+    position: absolute;
+}
+
+.background > section > img {
+    position: relative;
+}
+
+/* Tekst box */
+.section__textbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    height: 17rem;
+    border: 0.3rem solid black;
+    background-color: white;
+}
+
+.section__textbox > p {
+    font-size: 1.6rem;
+}
+
+.section__textbox > h2 {
+    font-size: 1.9rem;
+}
+
+.section__textbox--completed {
+    top: 35%;
+    display: none;
+    background-color: var(--bg-color-light);
+    color: white;
+}
+.section__textbox--completed > h2, .section__textbox--completed > p {
+    text-align: center;
+}
+
+#section__adventure-guy {
+    display: none;
+    transition: 0.8s;
+}
+
+.section__adventure-guy__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    text-align: center;
+}
+
+.section__adventure-guy__container > h1 {
+    font-size: 2.5rem;
+}
+
+.section__adventure-guy__container > p {
+    color: white;
+    margin-top: 5rem;
+}
+
+.section__adventure-guy__image {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Counter - Backpack */
+.backpack__image {
+    position: absolute;
+    width: 7rem;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+#backpack__count {
+    position: absolute;
+    display: none;
+    background-color: orange;
+    width: 4rem;
+    height: 4rem;
+    bottom: 5.5rem;
+    left: 6rem;
+    border-radius: 10rem;
+}
+
+#backpack__count_number {
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width: 1250px) {
+    .backpack__image {
+        bottom: 1rem;
+    }
+
+    .section__textbox {
+        width: 50rem;
+        height: 15rem;
+    }
+
+    .section__textbox > h2 {
+        text-align: center;
+    }
+
+    .section__adventure-guy__container {
+        top: 20rem
+    }
+}

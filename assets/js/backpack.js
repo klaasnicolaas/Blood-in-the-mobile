@@ -17,7 +17,7 @@ backpackBtn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 backpackClose.onclick = function() {
     backpackContent.style.animationName = "animateback";
-        setTimeout(()=> {
+        setTimeout(() => {
             backpack.style.display = 'none';
         },300);
 };
@@ -26,7 +26,7 @@ backpackClose.onclick = function() {
 window.onclick = function(event) {
     if (event.target == backpack) {
         backpackContent.style.animationName = "animateback";
-        setTimeout(()=> {
+        setTimeout(() => {
             backpack.style.display = 'none';
         },300);
     }

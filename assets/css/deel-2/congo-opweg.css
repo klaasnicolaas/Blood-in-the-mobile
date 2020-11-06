@@ -1,0 +1,94 @@
+/* Scroll container */
+.scroll {
+    position: relative;
+    width: 100%;
+    height: 2350px;
+    overflow-x: scroll;
+}
+
+.scroll--block {
+    overflow: hidden;
+    overflow-y: scroll !important;
+    position: fixed;
+}
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 1920px;
+    background-image: url("/assets/img/deel-3/opweg.jpg");
+    background-repeat: no-repeat;
+    background-position: right 29em bottom;
+    transition: 0.8s;
+}
+
+/* Make all picture elements absolute */
+.background > picture {
+    position: absolute;
+    /* transition: all .3s ease; */
+}
+
+.car {
+    vertical-align: middle;
+    text-align: center;
+    width: 24%;
+    bottom: -6px;
+}
+
+.car__image {
+    width: 30rem;
+}
+
+/* Tekst box */
+.section__textbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    height: 19rem;
+    border: 0.3rem solid black;
+    background-color: white;
+}
+
+.section__textbox > p {
+    font-size: 1.6rem;
+}
+
+.section__textbox > h2 {
+    text-align: center;
+}
+
+/* Op basis van hoogte */
+@media (min-height: 737px) {
+    .scroll {
+        height: 3000px;
+    }
+}
+
+/* Op basis van breedte */
+@media (min-width: 500px) {
+    .section__textbox {
+        width: 45rem;
+        height: 17rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .section__textbox {
+        width: 50rem;
+        height: 17rem;
+    }
+}
+
+@media (min-width: 1630px) {
+    .background {
+        background-position: left bottom;
+    }
+
+    .car {
+        width: 53%;
+    }
+}

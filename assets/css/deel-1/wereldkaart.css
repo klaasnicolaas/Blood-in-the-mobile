@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+
+}
+
+.body{
+  background-color: #75CFEF;
+}
+
+.section__textbox__h2 {
+  margin: 0;
+}
+
+#kaart{
+  width: 100%;
+  height: 78%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.section__container {
+    display: inline-block;
+}
+
+.section__textbox {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    transition: 0.8s;
+}
+
+/* Tekst box */
+.section__textbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    height: 12rem;
+    border: 0.3rem solid var(--black);
+    background-color: var(--white);
+}
+
+.section__textbox > p {
+    font-size: 1.6rem;
+}
