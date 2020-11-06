@@ -8,8 +8,12 @@ h1 {
 
 .start__header {
     text-align: center;
+    width: 60rem;
 }
 
+.video{
+  margin: 1rem;
+}
 .button--next:hover {
     background-color: var(--button-hover-orange);
     color: white;
@@ -19,4 +23,6 @@ h1 {
     width: 25rem;
     height: 6rem;
     font-size: 2rem;
+    display: none;
+    margin: 0 auto;
 }
